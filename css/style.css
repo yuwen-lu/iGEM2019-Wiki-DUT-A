@@ -11,6 +11,10 @@ body {
   overflow-x: hidden;
 }
 
+.navbar {
+  background-color: #f2d2bd;
+}
+
 .v-header {
   height: 100vh;
   display: flex;
@@ -46,18 +50,22 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background: #f6ede7;
+  background: #f0f0bd;
   z-index: 2;
-  opacity: 0.55;
+  opacity: 0.2;
 }
 
 .header-content {
   z-index: 3;
 }
 
+.navbar {
+  z-index: 5;
+}
+
 .header-content h1 {
   font-size: 50px;
-  margin-bottom: 0;
+  margin-bottom: 30px;
 }
 
 .header-content p {
@@ -75,11 +83,15 @@ body {
   border-radius: 3em;
 }
 
-.section {
-  padding: 20px 0;
+.btn:hover {
+  color: #f6ede7;
 }
 
-.section-b {
+.section {
+  padding: 30px 0;
+}
+
+.section-bgcolor {
   background: #f6ede7;
 }
 
