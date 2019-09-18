@@ -130,6 +130,12 @@ footer .social-media a:hover {
   color: blue;
 }
 
+#copyright {
+  text-align: center;
+  font-weight: 400;
+  padding-bottom: 1vh;
+}
+
 @media (max-width: 960px) {
   .container {
     padding-right: 3rem;

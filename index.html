@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/aos.css" />
     <title>DUT_CHINA_A</title>
   </head>
   <body>
@@ -138,7 +139,7 @@
         <a href="#content-start" class="btn">Read More</a>
       </div>
     </header>
-    <div class="section section-a" id="content-start">
+    <div class="section section-a" id="content-start" data-aos="fade-left">
       <div class="container">
         <h2>Why are we doing this</h2>
         <p>
@@ -151,7 +152,7 @@
         </p>
       </div>
     </div>
-    <div class="section section-b section-bgcolor">
+    <div class="section section-b section-bgcolor" data-aos="fade-right">
       <div class="container">
         <h2>How did we do this</h2>
         <p>
@@ -164,7 +165,7 @@
         </p>
       </div>
     </div>
-    <div class="section section-c">
+    <div class="section section-c" data-aos="fade-left">
       <div class="container">
         <h2>And it's pretty good!</h2>
         <p>
@@ -177,7 +178,7 @@
         </p>
       </div>
     </div>
-    <div class="section section-d section-bgcolor">
+    <div class="section section-d section-bgcolor" data-aos="fade-right">
       <div class="container">
         <h2>What's next?</h2>
         <p>
@@ -195,8 +196,8 @@
         <div class="flex-item address">
           <h5>Reach Us</h5>
           <p>
-            No.2 Linggong Road, Ganjingzi District, <br> Dalian City, Liaoning
-            Province, P.R.C., 116024
+            No.2 Linggong Road, Ganjingzi District, <br />
+            Dalian City, Liaoning Province, P.R.C., 116024
           </p>
         </div>
         <div class="flex-item social-media">
@@ -211,9 +212,18 @@
           <p>xxxxx@mail.dlut.edu.cn</p>
         </div>
       </div>
-    </div>
-  </footer>
+      <div id="copyright">
+        Copyright &copy; 2019 iGEM DUT_China_A, all rights reserved.
+      </div>
+    </footer>
   </body>
   <script src="./js/jquery-3.4.1.min.js"></script>
   <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 300,
+      duration: 1000
+    });
+  </script>
 </html>
