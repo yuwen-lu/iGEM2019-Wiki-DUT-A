@@ -91,12 +91,26 @@ body {
   color: #f6ede7;
 }
 
+#content-begin {
+  margin-top: 3rem;
+}
+
 .section {
-  padding: 30px 0;
+  padding: 6rem 0;
 }
 
 .section-bgcolor {
   background: #f6ede7;
+}
+
+.grid-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+.section:nth-child(even) img {
+  order: 2;
 }
 
 footer {
@@ -105,7 +119,7 @@ footer {
   font-size: 80%;
 }
 
-.flex-container {
+.flex-container-footer {
   padding: 2vh 0;
   display: flex;
   flex-wrap: nowrap;
