@@ -2,6 +2,15 @@
 
 * {
   box-sizing: border-box;
+  /*hide scroll bar for ie 10+*/
+  -ms-overflow-style: none;
+  /*hide scroll bar for firefox*/
+  scrollbar-width: none;
+}
+
+/*hide scroll bar for safari and chrome*/
+*::-webkit-scrollbar {
+  display: none;
 }
 
 body {
