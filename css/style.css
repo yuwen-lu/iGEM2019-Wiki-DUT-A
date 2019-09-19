@@ -9,6 +9,12 @@ body {
   line-height: 1.5;
   color: #333;
   overflow-x: hidden;
+  /*add padding to body so that the actual content won't be blocked by the navbar*/
+  padding-top: 65px;
+}
+
+#navigation {
+  display: block;
 }
 
 .navbar {
