@@ -11,7 +11,7 @@ body {
   /*the default display for the content is inline*/
   display: block;
   height: 80px; /*the height of the navbar*/
-  margin: -80px 0 0;
+  margin-top: -80px;
 }
 
 .container {

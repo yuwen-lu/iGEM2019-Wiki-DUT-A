@@ -1,79 +1,137 @@
-{{ DUT_China_A }}
-<html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="shortcut icon"
+      href="./resources/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/content-style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <title>Project Description</title>
+  </head>
   <body>
+    <div id="navigation"></div>
     <div class="container">
-        <h2 style="text-align: center">Project Description</h3>
-            <p>
-              It is well-known that cancer metastasis is the primary cause behind many
-              cancer patients’ death. Tumor cells first intrude the tissues surrounding
-              the primary cancer cells, then transfer or exudate to other distal tissues
-              with the help of Circulating Tumor Cells (CTCs) through blood circulation
-              or lymphatic networks. The transfer and exudation, are exactly the main
-              reasons behind cancerous lesions. Obviously, research on the capture,
-              detection and elimination of CTCs plays a vital role in combating cancer.
-              However, catching CTCs has never been easy. On the one hand, the cells’
-              scarce amount in a person’s body and its tiny size make it hard for us to
-              detect them. On the other, the existing CTCs capture devices usually
-              damage the cells, causing the loss of their integrity and activity, which
-              sets barriers for future research. Therefore, it is a challenge to capture
-              circulating tumor cells while keeping them intact and active. In order to
-              do this, we decided to design a prison garb for CTCs to keep them in
-              captivity and under protection. Our prison garb has the following
-              characteristics:
-            </p>
-            <h4>
-              Aptamer——the hunter of our prison garb
-            </h4>
-            <p>
-              The aptamers serve as targets for specific priming capture in our prison
-              garb. Their o oligonucleotide sequences are substitutions for antibodies
-              in therapeutic and diagnostic applications. The aptamers are stable under
-              various circumstances and can be synthesized and highly purified in
-              laboratories easily. Surprisingly, modifying aptamers seems not to affect
-              their affinity to the target, thus we can decorate our prison garb with
-              aptamers, the hunters, for the detection and capture of CTCs. We attempt
-              to develop a mechanism which uses the binding of adapters with CTCs as a
-              trigger, so that we can accurately control our capture.
-            </p>
-        
-            <h4>Quantum dots ——the alertor of our prison garb</h4>
-            <p>
-              Quantum dots (QDs), a kind of nanocrystals with core-shell structure which
-              are attached to the garb, help us catch CTCs visually. Compared with
-              conventional fluorescent dyes, they have narrow excitation and wide
-              emission spectra. Meanwhile, the photostability and quantum yield of QDs
-              are better than those of fluorescent dyes. So QDs have been applied more
-              and more frequently in bioimaging and analysis. By combining magnetic
-              quantum dots into the capture system, we realize directional lighting of
-              captured CTC.
-            </p>
-            <h4>
-              DNA hydrogel ——the fetter of our prison grab
-            </h4>
-            <p>
-              The hydrogel system presents how we guarantee the controllability of our
-              prison garb. We want to make DNA hydrogel form around CTCs through
-              specific structure DNA cross-linking so as to achieve the coating and
-              protection of the CTCs. Taking it into consideration, the designed DNA
-              hydrogels should be equipped with the following functions. Firstly, start
-              cross-linking according to the signal of specific aptamers of CTCs to
-              ensure the correctness of the captured cells. Secondly, be convenient for
-              us to fill quantum dots into it in order to recognize fluorescent labeling
-              and magnetic adsorption-based capture. Thirdly, it can be coated or
-              released in a mild way to ensure the physiological activity of the coated
-              CTCs.
-            </p>
-          </body>
-        
-          <div class="citation" style="font-size: 10px">
-            <h5>Citation:</h5>
-            <ul>
-                <li><a href="https://www.liebertpub.com/doi/10.1089/nat.2016.0632">[1]	HASSAN E M, WILLMORE W G, DEROSA M C. Aptamers: Promising Tools for the Detection of Circulating Tumor Cells [J]. Nucleic Acid Therapeutics, 2016, 26(6): 335.</a></li>
-                <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/10471678?dopt=Abstract">[2]	JAYASENA S D. Aptamers: an emerging class of molecules that rival antibodies in diagnostics [J]. Clinical Chemistry, 1999, 45(9): 1628.</a></li>
-                <li><a href="https://pubs.acs.org/doi/10.1021/ac049442%2B">[3]	XIAO-LI S, YANBIN L. Quantum dot biolabeling coupled with immunomagnetic separation for detection of Escherichia coli O157:H7 [J]. Analytical Chemistry, 2004, 76(16): 4806-10.</a></li>
-                <li><a href="https://onlinelibrary.wiley.com/doi/full/10.1002/adfm.200901812">[4]	ZHAO Y, ZHAO X, TANG B, et al. Quantum?Dot?Tagged Bioresponsive Hydrogel Suspension Array for Multiplex Label?Free DNA Detection [J]. Advanced Functional Materials, 2010, 20(6): 976-82.</a></li>
-                <li><a href="https://pubs.acs.org/doi/10.1021/acs.nanolett.7b01006">[5]	SONG P, YE D, ZUO X, et al. DNA Hydrogel with Aptamer-Toehold-Based Recognition, Cloaking, and Decloaking of Circulating Tumor Cells for Live Cell Analysis [J]. Nano Letters, 2017, 17(9): 5193-8.</a></li>
-            </ul>
-          </div>
+      <h2 style="text-align: center">Project Description</h2>
+      <p>
+        It is well-known that cancer metastasis is the primary cause behind many
+        cancer patients’ death. Tumor cells first intrude the tissues
+        surrounding the primary cancer cells, then transfer or exudate to other
+        distal tissues with the help of Circulating Tumor Cells (CTCs) through
+        blood circulation or lymphatic networks. The transfer and exudation, are
+        exactly the main reasons behind cancerous lesions. Obviously, research
+        on the capture, detection and elimination of CTCs plays a vital role in
+        combating cancer. However, catching CTCs has never been easy. On the one
+        hand, the cells’ scarce amount in a person’s body and its tiny size make
+        it hard for us to detect them. On the other, the existing CTCs capture
+        devices usually damage the cells, causing the loss of their integrity
+        and activity, which sets barriers for future research. Therefore, it is
+        a challenge to capture circulating tumor cells while keeping them intact
+        and active. In order to do this, we decided to design a prison garb for
+        CTCs to keep them in captivity and under protection. Our prison garb has
+        the following characteristics:
+      </p>
+      <h4>
+        Aptamer——the hunter of our prison garb
+      </h4>
+      <p>
+        The aptamers serve as targets for specific priming capture in our prison
+        garb. Their o oligonucleotide sequences are substitutions for antibodies
+        in therapeutic and diagnostic applications. The aptamers are stable
+        under various circumstances and can be synthesized and highly purified
+        in laboratories easily. Surprisingly, modifying aptamers seems not to
+        affect their affinity to the target, thus we can decorate our prison
+        garb with aptamers, the hunters, for the detection and capture of CTCs.
+        We attempt to develop a mechanism which uses the binding of adapters
+        with CTCs as a trigger, so that we can accurately control our capture.
+      </p>
+
+      <h4>Quantum dots ——the alertor of our prison garb</h4>
+      <p>
+        Quantum dots (QDs), a kind of nanocrystals with core-shell structure
+        which are attached to the garb, help us catch CTCs visually. Compared
+        with conventional fluorescent dyes, they have narrow excitation and wide
+        emission spectra. Meanwhile, the photostability and quantum yield of QDs
+        are better than those of fluorescent dyes. So QDs have been applied more
+        and more frequently in bioimaging and analysis. By combining magnetic
+        quantum dots into the capture system, we realize directional lighting of
+        captured CTC.
+      </p>
+      <h4>
+        DNA hydrogel ——the fetter of our prison grab
+      </h4>
+      <p>
+        The hydrogel system presents how we guarantee the controllability of our
+        prison garb. We want to make DNA hydrogel form around CTCs through
+        specific structure DNA cross-linking so as to achieve the coating and
+        protection of the CTCs. Taking it into consideration, the designed DNA
+        hydrogels should be equipped with the following functions. Firstly,
+        start cross-linking according to the signal of specific aptamers of CTCs
+        to ensure the correctness of the captured cells. Secondly, be convenient
+        for us to fill quantum dots into it in order to recognize fluorescent
+        labeling and magnetic adsorption-based capture. Thirdly, it can be
+        coated or released in a mild way to ensure the physiological activity of
+        the coated CTCs.
+      </p>
+      <div class="citation" style="font-size: 10px">
+        <h5>Citation:</h5>
+        <ul>
+          <li>
+            <a href="https://www.liebertpub.com/doi/10.1089/nat.2016.0632"
+              >[1] HASSAN E M, WILLMORE W G, DEROSA M C. Aptamers: Promising
+              Tools for the Detection of Circulating Tumor Cells [J]. Nucleic
+              Acid Therapeutics, 2016, 26(6): 335.</a
+            >
+          </li>
+          <li>
+            <a href="https://www.ncbi.nlm.nih.gov/pubmed/10471678?dopt=Abstract"
+              >[2] JAYASENA S D. Aptamers: an emerging class of molecules that
+              rival antibodies in diagnostics [J]. Clinical Chemistry, 1999,
+              45(9): 1628.</a
+            >
+          </li>
+          <li>
+            <a href="https://pubs.acs.org/doi/10.1021/ac049442%2B"
+              >[3] XIAO-LI S, YANBIN L. Quantum dot biolabeling coupled with
+              immunomagnetic separation for detection of Escherichia coli
+              O157:H7 [J]. Analytical Chemistry, 2004, 76(16): 4806-10.</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://onlinelibrary.wiley.com/doi/full/10.1002/adfm.200901812"
+              >[4] ZHAO Y, ZHAO X, TANG B, et al. Quantum?Dot?Tagged
+              Bioresponsive Hydrogel Suspension Array for Multiplex Label?Free
+              DNA Detection [J]. Advanced Functional Materials, 2010, 20(6):
+              976-82.</a
+            >
+          </li>
+          <li>
+            <a href="https://pubs.acs.org/doi/10.1021/acs.nanolett.7b01006"
+              >[5] SONG P, YE D, ZUO X, et al. DNA Hydrogel with
+              Aptamer-Toehold-Based Recognition, Cloaking, and Decloaking of
+              Circulating Tumor Cells for Live Cell Analysis [J]. Nano Letters,
+              2017, 17(9): 5193-8.</a
+            >
+          </li>
+        </ul>
+      </div>
     </div>
+  </body>
+  <script src="./js/jquery-3.4.1.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script>
+    $(function() {
+      $("#navigation").load("./navigation.html");
+    });
+  </script>
 </html>
