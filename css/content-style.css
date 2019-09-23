@@ -3,11 +3,13 @@
   width: 100vw;
   overflow: hidden;
   margin-bottom: 3rem;
+  opacity: 0.7;
+  /*the z-index is inline with the one on the homepage (for the full screen video overlay)*/
+  z-index: 2;
 }
 
 .header-img img {
   width: 100vw;
-  opacity: 0.7;
 }
 
 .page-title {
