@@ -1,6 +1,23 @@
+/* Page title hierarchy description 
+
+h3 - section title (dates), h4 - subtitle (bullet points of the content), h5 - sub-subtitle (details of the parent title)*/
+
 body {
   /*when clicking on the sidenav open button*/
   transition: background-color 0.5s;
+}
+
+.real-content h3 {
+  font-weight: 700;
+}
+
+.real-content h4 {
+  font-weight: 600;
+  margin: 1.2rem 0;
+}
+
+.real-content h5 {
+  margin: 1rem 0;
 }
 
 /* the :target pseudo selector is the selected section of the page*/
@@ -134,7 +151,7 @@ i {
   color: #fff;
 }
 
-.sub-title {
+/* .sub-title {
   font-weight: 600;
   font-size: 1.2rem;
   margin: 1.2rem 0;
@@ -143,12 +160,12 @@ i {
 .sub-sub-title {
   font-weight: 600;
   font-size: 1.1rem;
-  margin: 1rem 0;
+  margin: 1rem 0; 
 }
 
 .paragraph {
   margin-bottom: 0.8rem;
-}
+} */
 
 section {
   margin: 3rem 0;
