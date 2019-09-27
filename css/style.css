@@ -25,6 +25,10 @@ body {
   padding-top: 55px;
 }
 
+nav {
+  margin-top: 14px; /*block the default igem navbar*/
+}
+
 #navigation {
   display: block;
 }
