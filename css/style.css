@@ -40,3 +40,41 @@ body {
 .navbar-brand {
   padding: 0;
 }
+
+footer {
+  background-color: #d26a2a;
+  color: #fff;
+  font-size: 80%;
+  width: 100vw;
+}
+
+.flex-container-footer {
+  padding: 2vh 0;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+
+.flex-item {
+  margin: 20px;
+}
+
+footer .social-media ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+footer .social-media a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer .social-media a:hover {
+  color: blue;
+}
+
+#copyright {
+  text-align: center;
+  font-weight: 400;
+  padding-bottom: 1vh;
+}
