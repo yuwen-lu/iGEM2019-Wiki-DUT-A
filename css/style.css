@@ -2,6 +2,7 @@
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
   /*hide scroll bar for ie 10+*/
   -ms-overflow-style: none;
   /*hide scroll bar for firefox*/
