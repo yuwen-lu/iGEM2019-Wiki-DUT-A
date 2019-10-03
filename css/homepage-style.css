@@ -19,12 +19,12 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  text-indent: -15vw;
+  background-image: url(../resources/homepage.jpg);
+  background-size: cover;
   width: 100%;
   height: 100%;
+  overflow: hidden;
+  text-indent: -15vw;
 }
 
 .header-overlay {
