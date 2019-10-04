@@ -21,7 +21,7 @@
   </head>
   <body>
     <div id="navigation"></div>
-    <header class="v-header container">
+    <header class="v-header">
       <div class="fullscreen-video-wrap">
         <!-- <video src="./resources/type.mov" autoplay="true" loop="true"></video> -->
         <!-- <img src="./resources/homepage.jpg" /> -->
@@ -35,7 +35,9 @@
           harum amet expedita ab numquam eligendi fugit! Dolorum cumque culpa
           autem obcaecati.
         </p> -->
-        <!-- <a href="#content-start" class="btn">Read More</a> -->
+        <a href="#content-start" class="start-btn"
+          >Let's start our journey!<br /><i class="arrow-down start-arrow"></i
+        ></a>
       </div>
     </header>
     <div class="section section-a" id="content-start" data-aos="fade-left">
@@ -43,7 +45,7 @@
         <!-- the class "flex-content-container" is the flex container for the content on the homepage here -->
         <img src="https://picsum.photos/id/1002/300/200" />
         <div>
-          <h2>Why are we doing this</h2>
+          <h2>What do we want to achieve?</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit.
             Consectetur quos, minima numquam distinctio mollitia eligendi harum
@@ -108,16 +110,5 @@
   <script src="./js/jquery-3.4.1.min.js"></script>
   <script src="./js/bootstrap.min.js"></script>
   <script src="./js/aos.js"></script>
-  <script>
-    $(function() {
-      $("#navigation").load("./navigation.html");
-      $("#footer").load("./footer.html");
-    });
-  </script>
-  <script>
-    AOS.init({
-      offset: 300,
-      duration: 1000
-    });
-  </script>
+  <script src="./js/homepage.js"></script>
 </html>

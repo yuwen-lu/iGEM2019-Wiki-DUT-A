@@ -35,7 +35,7 @@ nav {
 }
 
 .navbar {
-  background-color: #f7e2d4;
+  background-color: #fdb4b4;
   position: fixed !important;
   top: 0;
   width: 100%;
@@ -47,8 +47,8 @@ nav {
 }
 
 footer {
-  background-color: #d26a2a;
-  color: #fff;
+  background-color: #fda9a9;
+  color: #333;
   font-size: 80%;
   width: 100vw;
 }
@@ -64,22 +64,50 @@ footer {
   margin: 20px;
 }
 
-footer .social-media ul {
+footer .team-collaboration ul {
   padding: 0;
   list-style-type: none;
 }
 
-footer .social-media a {
+footer .team-collaboration a {
   text-decoration: none;
-  color: #fff;
+  color: #333;
 }
 
-footer .social-media a:hover {
-  color: blue;
+footer .team-collaboration a:hover {
+  color: #6a6afb;
 }
 
 #copyright {
   text-align: center;
   font-weight: 400;
   padding-bottom: 1vh;
+}
+
+/* the following several styles are for the arrows*/
+
+i {
+  border: solid #888;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 10px;
+  margin-right: 0;
+}
+
+.arrow-left {
+  transform: rotate(135deg);
+  /*add the next line just in case someone's using a really old browser :)*/
+  -webkit-transform: rotate(135deg);
+}
+
+.arrow-right {
+  transform: rotate(-45deg);
+  /*add the next line just in case someone's using a really old browser :)*/
+  -webkit-transform: rotate(-45deg);
+}
+
+.arrow-down {
+  transform: rotate(45deg);
+  /*add the next line just in case someone's using a really old browser :)*/
+  -webkit-transform: rotate(45deg);
 }

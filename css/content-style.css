@@ -49,26 +49,6 @@ body {
   width: 100vw;
 }
 
-i {
-  border: solid #888;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 10px;
-  margin-right: 0;
-}
-
-.arrow-left {
-  transform: rotate(135deg);
-  /*add the next line just in case someone's using a really old browser :)*/
-  -webkit-transform: rotate(135deg);
-}
-
-.arrow-right {
-  transform: rotate(-45deg);
-  /*add the next line just in case someone's using a really old browser :)*/
-  -webkit-transform: rotate(-45deg);
-}
-
 #open-nav {
   position: fixed;
   right: 3vw;
