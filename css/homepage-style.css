@@ -69,6 +69,12 @@
   margin-top: 75vh;
 }
 
+.down-animation {
+  -moz-animation: move-down-bounce 2s infinite;
+  /* -webkit-animation: move-down-bounce 2s infinite; */
+  animation: move-down-bounce 2s infinite;
+}
+
 .start-btn i {
   border-color: #333;
 }
