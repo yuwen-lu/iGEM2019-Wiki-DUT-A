@@ -39,6 +39,9 @@ nav {
   position: fixed !important;
   top: 0;
   width: 100%;
+  font-size: 1.2rem;
+  color: black;
+  height: 5rem;
   z-index: 1000;
 }
 
@@ -52,7 +55,7 @@ nav {
 
 .navbar-brand img {
   margin: auto;
-  height: 45px; /* the height of the navbar*/
+  height: 3rem;
 }
 
 footer {
