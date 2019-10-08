@@ -27,22 +27,33 @@ body {
   content: "";
   /*the default display for the content is inline*/
   display: block;
-  height: 80px; /*the height of the navbar*/
-  margin-top: -80px;
+  height: 150px; /*the height of the navbar is 80px, adding some to make it farther away from the top*/
+  margin-top: -150px;
 }
 
 .content-container {
   position: relative;
-  width: 75vw;
-  left: 20vw;
-  right: 5vw;
+  top: 0;
+  display: inline-block;
+  width: 65vw;
+  margin-left: 22vw;
 }
+
 .side-nav {
-  position: fixed;
-  width: 20vw;
-  padding: 0 3vw;
-  margin: auto;
-  text-align: left;
+  /* display: block;
+  float: left; */
+  display: inline-block;
+
+  position: -webkit-sticky; /*safari*/
+  position: sticky;
+
+  top: 20vh;
+  width: auto;
+  padding-bottom: 5vh;
+  padding-right: 1vw;
+  margin-left: 3vw;
+  text-align: center;
+  border-right: solid 4px #fdb4b4;
 }
 
 .side-nav h3,
@@ -63,7 +74,7 @@ body {
 }
 
 .side-nav a:hover {
-  color: #f1f1f1;
+  color: #fdb4b4;
   text-decoration: none;
 }
 

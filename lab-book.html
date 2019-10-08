@@ -23,15 +23,16 @@
     </div>
     <!-- <a href="javascript:void(0)" id="open-nav" onclick="openNav()"><i class="arrow-left"></i></a> -->
     <div class="side-nav">
-        <h4>September</h4>
-        <a href="#sep-10">Sep 10th</a>
-        <a href="#sep-11">Sep 11th</a>
-        <a href="#sep-12">Sep 12th</a>
-        <a href="#sep-13">Sep 13th</a>
-        <!-- <a href="javascript:void(0)" onclick="closeNav()"><i id="close-nav" class="arrow-right"></i></a> -->
-      </div>
-    <div class="content-container"><section id="sep-10">
-        <h3>Sep 10th</h3>
+      <h4>September</h4>
+      <a href="#sep-10">Sep 10th</a>
+      <a href="#sep-11">Sep 11th</a>
+      <a href="#sep-12">Sep 12th</a>
+      <a href="#sep-13">Sep 13th</a>
+      <!-- <a href="javascript:void(0)" onclick="closeNav()"><i id="close-nav" class="arrow-right"></i></a> -->
+    </div>
+    <div class="content-container">
+        <section id="sep-10">
+          <h3>Sep 10th</h3>
         <p>
           <h4>1. Prepare hydrogels through RCA</h4>
           Add 20μl of annular template and 20μl of Aptamer-Primer 1 to a
@@ -47,7 +48,7 @@
           1 ul of primer 2 and primer 3 were added to each well
           and then incubate at 30 ° C for 16 h.
         </p>
-    </section>
+        </section>
     <section id="sep-11">
       <h3>Sep 11th</h3>
       <p>
@@ -90,14 +91,17 @@
         <h4>Hydrogels observation:</h4>
         After 16 hours, the hydrogels are observed in the UV on a gel imaging analyzer.
       </p>
-    </section></div>
-      
-      
+    </section>
     </div>
     <div id="footer"></div>
   </body>
   <script src="./js/jquery-3.4.1.min.js"></script>
   <script src="./js/bootstrap.min.js"></script>
+  <script>
+    let sideNavHeight = document.getElementsByClassName("side-nav")[0].clientHeight * 1.2;
+    let content = document.getElementsByClassName("content-container")[0];
+    content.style.top = "-" + sideNavHeight.toString() + "px";
+  </script>
   <script>
     $(function() {
       $("#navigation").load("./navigation.html");
