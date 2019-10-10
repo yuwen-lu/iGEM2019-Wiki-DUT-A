@@ -8,6 +8,11 @@ body {
 }
 
 .real-content h3 {
+  display: inline-block;
+  text-align: center;
+  margin: auto;
+  padding: 1vh;
+  border-bottom: solid 3px #fdb4b4;
   font-weight: 700;
 }
 
