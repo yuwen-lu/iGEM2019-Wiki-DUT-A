@@ -24,15 +24,15 @@
     <!-- <a href="javascript:void(0)" id="open-nav" onclick="openNav()"><i class="arrow-left"></i></a> -->
     <div class="side-nav">
       <h4>September</h4>
-      <a href="#sep-10">Sep 10th</a>
-      <a href="#sep-11">Sep 11th</a>
-      <a href="#sep-12">Sep 12th</a>
-      <a href="#sep-13">Sep 13th</a>
+      <a href="#sep-10" class="side-nav-item">Sep 10th</a>
+      <a href="#sep-11" class="side-nav-item">Sep 11th</a>
+      <a href="#sep-12" class="side-nav-item">Sep 12th</a>
+      <a href="#sep-13" class="side-nav-item">Sep 13th</a>
       <!-- <a href="javascript:void(0)" onclick="closeNav()"><i id="close-nav" class="arrow-right"></i></a> -->
     </div>
     <div class="content-container">
         <section id="sep-10">
-          <h3>Sep 10th</h3>
+          <h3><img class="icon" src="./resources/design_icon.png" alt=""> September 10th</h3>
         <p>
           <h4>1. Prepare hydrogels through RCA</h4>
           Add 20μl of annular template and 20μl of Aptamer-Primer 1 to a
@@ -50,7 +50,7 @@
         </p>
         </section>
     <section id="sep-11">
-      <h3>Sep 11th</h3>
+      <h3><img class="icon" src="./resources/design_icon.png" alt="">September 11th</h3>
       <p>
         <h4>Hydrogels observation</h4>
         Add 1ul of 100X GelRed to the four-well, add 1 ul of 100X GelRed to the four wells, stain the hydrogels with a nucleic acid dye, and observe the hydrogels in the UV on a gel imaging analyzer.
@@ -64,7 +64,7 @@
       </p>
     </section>
     <section id="sep-12">
-      <h3>Sep 12th</h3>
+      <h3><img class="icon" src="./resources/design_icon.png" alt="">September 12th</h3>
       <p>
         <h4>Exploration for the right RCA system condition</h4>
         <h5 class="sub-sub-title">1. Preparation for the reaction system solution</h5>
@@ -86,7 +86,7 @@
       </p>
     </section>
     <section id="sep-13">
-      <h3>Sep 13th</h3>
+      <h3><img class="icon" src="./resources/design_icon.png" alt="">September 13th</h3>
       <p>
         <h4>Hydrogels observation:</h4>
         After 16 hours, the hydrogels are observed in the UV on a gel imaging analyzer.
@@ -97,18 +97,14 @@
   </body>
   <script src="./js/jquery-3.4.1.min.js"></script>
   <script src="./js/bootstrap.min.js"></script>
-  <script>
-    let sideNavHeight = document.getElementsByClassName("side-nav")[0].clientHeight * 1.2;
-    let content = document.getElementsByClassName("content-container")[0];
-    content.style.top = "-" + sideNavHeight.toString() + "px";
-  </script>
+  <script src="./js/content-page.js"></script>
   <script>
     $(function() {
       $("#navigation").load("./navigation.html");
       $("#footer").load("./footer.html");
     });
   </script>
-  <script>
+  <!-- <script>
       function openNav() {
         document.getElementById("side-nav").style.width = "20vw";
         document.getElementById("side-nav").style.paddingLeft = "3vw";
@@ -130,5 +126,5 @@
         //change back the background-color of the main page
         document.body.style.backgroundColor = "white";
         }
-      </script>
+      </script> -->
 </html>

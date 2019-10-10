@@ -9,10 +9,9 @@ body {
 
 .real-content h3 {
   display: inline-block;
-  text-align: center;
   margin: auto;
-  padding: 1vh;
-  border-bottom: solid 3px #fdb4b4;
+  /* padding: 1vh;
+  border-bottom: solid 3px #fdb4b4; */
   font-weight: 700;
 }
 
@@ -34,6 +33,12 @@ body {
   display: block;
   height: 150px; /*the height of the navbar is 80px, adding some to make it farther away from the top*/
   margin-top: -150px;
+}
+
+.icon {
+  margin-left: -1rem;
+  height: 3.5rem;
+  width: auto;
 }
 
 .content-container {
