@@ -2,10 +2,12 @@
 
 h3 - section title (dates), h4 - subtitle (bullet points of the content), h5 - sub-subtitle (details of the parent title)*/
 
+/*when clicking on the sidenav open button, no longer useful
 body {
-  /*when clicking on the sidenav open button*/
+  
   transition: background-color 0.5s;
 }
+*/
 
 .real-content h3 {
   display: inline-block;
@@ -31,8 +33,8 @@ body {
   content: "";
   /*the default display for the content is inline*/
   display: block;
-  height: 150px; /*the height of the navbar is 80px, adding some to make it farther away from the top*/
-  margin-top: -150px;
+  height: 40vh;
+  margin-top: -40vh;
 }
 
 .icon {
@@ -47,6 +49,10 @@ body {
   display: inline-block;
   width: 65vw;
   margin-left: 22vw;
+}
+
+.content-container p {
+  margin: 1rem 0;
 }
 
 .side-nav {

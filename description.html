@@ -24,7 +24,13 @@
       <img src="./resources/project-description.jpg" />
       <h1 class="page-title">Project Description</h1>
     </div>
-    <div class="container">
+    <div class="side-nav">
+      <h4>Description</h4>
+      <a href="#aptamer" class="side-nav-item">Aptamer</a>
+      <a href="#quantum-dots" class="side-nav-item">Quantum Dots</a>
+      <a href="#dna-hydrogen" class="side-nav-item">DNA Hydrogen</a>
+    </div>
+    <div class="content-container">
       <p>
         It is well-known that cancer metastasis is the primary cause behind many
         cancer patients’ death. Tumor cells first intrude the tissues
@@ -43,48 +49,54 @@
         CTCs to keep them in captivity and under protection. Our prison garb has
         the following characteristics:
       </p>
-      <h4>
-        Aptamer——the hunter of our prison garb
-      </h4>
-      <p>
-        The aptamers serve as targets for specific priming capture in our prison
-        garb. Their o oligonucleotide sequences are substitutions for antibodies
-        in therapeutic and diagnostic applications. The aptamers are stable
-        under various circumstances and can be synthesized and highly purified
-        in laboratories easily. Surprisingly, modifying aptamers seems not to
-        affect their affinity to the target, thus we can decorate our prison
-        garb with aptamers, the hunters, for the detection and capture of CTCs.
-        We attempt to develop a mechanism which uses the binding of adapters
-        with CTCs as a trigger, so that we can accurately control our capture.
-      </p>
-
-      <h4>Quantum dots ——the alertor of our prison garb</h4>
-      <p>
-        Quantum dots (QDs), a kind of nanocrystals with core-shell structure
-        which are attached to the garb, help us catch CTCs visually. Compared
-        with conventional fluorescent dyes, they have narrow excitation and wide
-        emission spectra. Meanwhile, the photostability and quantum yield of QDs
-        are better than those of fluorescent dyes. So QDs have been applied more
-        and more frequently in bioimaging and analysis. By combining magnetic
-        quantum dots into the capture system, we realize directional lighting of
-        captured CTC.
-      </p>
-      <h4>
-        DNA hydrogel ——the fetter of our prison grab
-      </h4>
-      <p>
-        The hydrogel system presents how we guarantee the controllability of our
-        prison garb. We want to make DNA hydrogel form around CTCs through
-        specific structure DNA cross-linking so as to achieve the coating and
-        protection of the CTCs. Taking it into consideration, the designed DNA
-        hydrogels should be equipped with the following functions. Firstly,
-        start cross-linking according to the signal of specific aptamers of CTCs
-        to ensure the correctness of the captured cells. Secondly, be convenient
-        for us to fill quantum dots into it in order to recognize fluorescent
-        labeling and magnetic adsorption-based capture. Thirdly, it can be
-        coated or released in a mild way to ensure the physiological activity of
-        the coated CTCs.
-      </p>
+      <section id="aptamer">
+        <h3>
+          Aptamer——the hunter of our prison garb
+        </h3>
+        <p>
+          The aptamers serve as targets for specific priming capture in our
+          prison garb. Their o oligonucleotide sequences are substitutions for
+          antibodies in therapeutic and diagnostic applications. The aptamers
+          are stable under various circumstances and can be synthesized and
+          highly purified in laboratories easily. Surprisingly, modifying
+          aptamers seems not to affect their affinity to the target, thus we can
+          decorate our prison garb with aptamers, the hunters, for the detection
+          and capture of CTCs. We attempt to develop a mechanism which uses the
+          binding of adapters with CTCs as a trigger, so that we can accurately
+          control our capture.
+        </p>
+      </section>
+      <section id="quantum-dots">
+        <h3>Quantum dots ——the alertor of our prison garb</h3>
+        <p>
+          Quantum dots (QDs), a kind of nanocrystals with core-shell structure
+          which are attached to the garb, help us catch CTCs visually. Compared
+          with conventional fluorescent dyes, they have narrow excitation and
+          wide emission spectra. Meanwhile, the photostability and quantum yield
+          of QDs are better than those of fluorescent dyes. So QDs have been
+          applied more and more frequently in bioimaging and analysis. By
+          combining magnetic quantum dots into the capture system, we realize
+          directional lighting of captured CTC.
+        </p>
+      </section>
+      <section id="dna-hydrogen">
+        <h3>
+          DNA hydrogel ——the fetter of our prison grab
+        </h3>
+        <p>
+          The hydrogel system presents how we guarantee the controllability of
+          our prison garb. We want to make DNA hydrogel form around CTCs through
+          specific structure DNA cross-linking so as to achieve the coating and
+          protection of the CTCs. Taking it into consideration, the designed DNA
+          hydrogels should be equipped with the following functions. Firstly,
+          start cross-linking according to the signal of specific aptamers of
+          CTCs to ensure the correctness of the captured cells. Secondly, be
+          convenient for us to fill quantum dots into it in order to recognize
+          fluorescent labeling and magnetic adsorption-based capture. Thirdly,
+          it can be coated or released in a mild way to ensure the physiological
+          activity of the coated CTCs.
+        </p>
+      </section>
       <div class="citation" style="font-size: 10px">
         <h5>Citation:</h5>
         <ul>
@@ -104,10 +116,9 @@
             [J]. Analytical Chemistry, 2004, 76(16): 4806-10.
           </li>
           <li>
-            [4] ZHAO Y, ZHAO X, TANG B, et al. Quantum?Dot?Tagged
-            Bioresponsive Hydrogel Suspension Array for Multiplex Label?Free
-            DNA Detection [J]. Advanced Functional Materials, 2010, 20(6):
-            976-82.
+            [4] ZHAO Y, ZHAO X, TANG B, et al. Quantum Dot Tagged Bioresponsive
+            Hydrogel Suspension Array for Multiplex Label Free DNA Detection
+            [J]. Advanced Functional Materials, 2010, 20(6): 976-82.
           </li>
           <li>
             [5] SONG P, YE D, ZUO X, et al. DNA Hydrogel with
@@ -122,6 +133,7 @@
   </body>
   <script src="./js/jquery-3.4.1.min.js"></script>
   <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/content-page.js"></script>
   <script>
     $(function() {
       $("#navigation").load("./navigation.html");
