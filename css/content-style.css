@@ -38,8 +38,8 @@ body {
 }
 
 .icon {
-  margin-left: -1rem;
-  height: 3.5rem;
+  margin-right: 0.5rem;
+  height: 2rem;
   width: auto;
 }
 
@@ -99,6 +99,7 @@ body {
   width: 100vw;
   overflow: hidden;
   margin-bottom: 3rem;
+  color: #fdb4b4;
   opacity: 0.7;
   /*the z-index is inline with the one on the homepage (for the full screen video overlay)*/
   z-index: 2;
