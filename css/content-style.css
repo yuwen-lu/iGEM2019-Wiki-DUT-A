@@ -26,17 +26,6 @@ body {
   margin: 1rem 0;
 }
 
-/* the :target pseudo selector is the selected section of the page*/
-/* ::before selector together with content attribute can add content before the selected element*/
-/* here they are used to set the offset for the in page anchor because of the fixed navigation bar*/
-:target::before {
-  content: "";
-  /*the default display for the content is inline*/
-  display: block;
-  height: 40vh;
-  margin-top: -40vh;
-}
-
 .icon {
   margin-right: 0.5rem;
   height: 2rem;

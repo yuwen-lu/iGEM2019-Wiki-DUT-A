@@ -14,6 +14,17 @@
   display: none;
 }
 
+/* the :target pseudo selector is the selected section of the page*/
+/* ::before selector together with content attribute can add content before the selected element*/
+/* here they are used to set the offset for the in page anchor because of the fixed navigation bar*/
+:target::before {
+  content: "";
+  /*the default display for the content is inline*/
+  display: block;
+  height: 40vh;
+  margin-top: -40vh;
+}
+
 body {
   margin: 0;
   font-family: "Source Sans Pro", "Segoe UI", Tahoma, Geneva, Verdana,
