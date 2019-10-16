@@ -51,9 +51,12 @@ nav {
   top: 0;
   width: 100%;
   font-size: 1.2rem;
-  color: black;
   height: 5rem;
   z-index: 1000;
+}
+
+#real-content .navbar a:visited {
+  color: #212529;
 }
 
 .navbar-brand {
