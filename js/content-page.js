@@ -21,7 +21,7 @@ window.addEventListener("scroll", () => {
     ) {
       sideNavItems[index].style.color = "#fdb4b4";
       sideNavItems[index].style.fontSize = "1.5rem";
-      console.log(topPosition / windowHeight, bottomPosition / windowHeight); // if the element is in the vertical center of the page
+      // console.log(topPosition / windowHeight, bottomPosition / windowHeight); // if the element is in the vertical center of the page
     } else {
       sideNavItems[index].style.color = "rgb(160,160,160)";
       sideNavItems[index].style.fontSize = "1.2rem";

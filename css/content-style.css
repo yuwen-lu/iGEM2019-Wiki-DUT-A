@@ -9,7 +9,7 @@ body {
 }
 */
 
-.real-content h3 {
+#real-content h3 {
   display: inline-block;
   margin: auto;
   /* padding: 1vh;
@@ -17,12 +17,12 @@ body {
   font-weight: 700;
 }
 
-.real-content h4 {
+#real-content h4 {
   font-weight: 600;
   margin: 1.2rem 0;
 }
 
-.real-content h5 {
+#real-content h5 {
   margin: 1rem 0;
 }
 
