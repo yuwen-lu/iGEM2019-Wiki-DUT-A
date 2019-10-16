@@ -24,3 +24,5 @@ I will note down some learning details and iGEM server deploy knowledge here in 
 2. The most common computer screen resolution is 1366 _ 768 px, followed by 1920 _ 1080 px (March 2019).
 
 3. When it comes to images, use jpeg format for photographs and png for icons. Background images are better with a width of around 2000px.
+
+4. Problems may occur if you use mediawiki templates reference provided by the iGEM organizer, it's better to put it in a template and use link tag to refer to them. Refer to the [official wiki editing help](https://2019.igem.org/Resources/Using_HTML_CSS_and_Javascript) **Using <link> and <script> tags to include CSS and Javascript** section for help.
