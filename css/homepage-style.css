@@ -24,7 +24,7 @@
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  text-indent: -15vw;
+  margin-top: -10vh;
 }
 /* 
 .header-overlay {
