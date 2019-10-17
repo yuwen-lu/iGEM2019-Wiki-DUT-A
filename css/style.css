@@ -25,10 +25,21 @@
   margin-top: -40vh;
 }
 
+@font-face {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/noto-sans-latin-regular.eot");
+  src: local("Noto Sans"), local("Noto Sans"),
+    url("../fonts/noto-sans-latin-regular.eot") format("embedded-opentype"),
+    url("../fonts/noto-sans-latin-regular.woff") format("woff"),
+    url("../fonts/noto-sans-latin-regular.ttf") format("truetype"),
+    url("../fonts/noto-sans-latin-regular.svg") format("svg");
+}
+
 body {
   margin: 0;
-  font-family: "Source Sans Pro", "Segoe UI", Tahoma, Geneva, Verdana,
-    sans-serif;
+  font-family: "Noto Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1rem;
   line-height: 1.5;
   color: #333;
