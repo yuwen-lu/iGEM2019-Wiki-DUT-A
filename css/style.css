@@ -60,6 +60,10 @@ nav {
   color: #212529;
 }
 
+#real-content .nav-item {
+  margin: 0 1rem;
+}
+
 .navbar-brand {
   width: auto;
   height: 48px;
