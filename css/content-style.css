@@ -193,3 +193,30 @@ section {
 
   width: 60vh;
 }
+
+#member-container {
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.member-item {
+  display: inline-block;
+  width: 35vw;
+  height: 30vh;
+  margin: 2rem 3rem;
+  padding: 3rem 2rem;
+  border: #fdb4b4 solid 4px;
+  border-radius: 2rem;
+}
+
+.member-item img {
+  float: left;
+  margin: auto 1rem;
+}
+
+.member-item p {
+  margin-bottom: 1rem;
+}
