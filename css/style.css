@@ -81,8 +81,11 @@ nav {
   -webkit-transition: color 0.5s;
 }
 
-#real-content .nav-item a:hover {
+#real-content .nav-item a:hover,
+#real-content .nav-item a:focus:active {
   color: #fff;
+
+  background-color: grey;
 }
 
 .navbar-brand {
