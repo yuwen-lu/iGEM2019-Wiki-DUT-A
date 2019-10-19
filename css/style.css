@@ -75,6 +75,16 @@ nav {
   margin: 0 1rem;
 }
 
+#real-content .nav-item a {
+  transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -webkit-transition: color 0.5s;
+}
+
+#real-content .nav-item a:hover {
+  color: #fff;
+}
+
 .navbar-brand {
   padding: 0;
   display: flex;
@@ -106,6 +116,8 @@ nav {
 #real-content .dropdown-item {
   height: 3rem;
   transition: background-color 0.5s ease-in-out;
+  -webkit-transition: background-color 0.5s ease-in-out;
+  -moz-transition: background-color 0.5s ease-in-out;
 }
 
 footer {
