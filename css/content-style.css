@@ -208,7 +208,7 @@ section {
   width: 18vw;
   height: 50vh;
   text-align: center;
-  margin: 2rem 3rem;
+  margin: 2rem 4rem;
   padding: 3rem 2rem;
   border: #fdb4b4 solid 4px;
   border-radius: 2rem;
@@ -219,11 +219,31 @@ section {
   margin-right: auto;
 }
 
+.img-wrapper {
+  position: relative;
+}
+
 .hide-first {
-  display: none;
-  transition: all 0.5s;
+  border-radius: 4px;
+  background-color: #bbdfe2ab;
+  position: absolute;
+  top: 0;
+  left: 13vw;
+  /* the width and height are the same as the image*/
+  width: 180px;
+  height: 230px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 1s;
+}
+
+.hide-first p {
+  display: inline-block;
+  margin-top: auto;
+  margin-bottom: 1rem;
 }
 
 .member-item .img-wrapper:hover .hide-first {
-  display: block;
+  visibility: visible;
+  opacity: 1;
 }
