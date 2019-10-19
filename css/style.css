@@ -117,7 +117,6 @@ nav {
 }
 
 #real-content .dropdown-item {
-  height: 3rem;
   transition: background-color 0.5s ease-in-out;
   -webkit-transition: background-color 0.5s ease-in-out;
   -moz-transition: background-color 0.5s ease-in-out;
@@ -155,6 +154,10 @@ footer .team-collaboration a:hover {
   color: #6a6afb;
 }
 
+footer img {
+  margin-left: -1rem;
+}
+
 #copyright {
   text-align: center;
   font-weight: 400;
@@ -187,4 +190,9 @@ i {
   transform: rotate(45deg);
   /*add the next line just in case someone's using a really old browser :)*/
   -webkit-transform: rotate(45deg);
+}
+
+.footer-icon {
+  width: 2.5rem;
+  height: auto;
 }
