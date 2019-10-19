@@ -195,6 +195,7 @@ section {
 }
 
 #member-container {
+  width: 80%;
   margin-right: auto;
   margin-left: auto;
   display: flex;
@@ -204,8 +205,9 @@ section {
 
 .member-item {
   display: inline-block;
-  width: 35vw;
-  height: 30vh;
+  width: 18vw;
+  height: 50vh;
+  text-align: center;
   margin: 2rem 3rem;
   padding: 3rem 2rem;
   border: #fdb4b4 solid 4px;
@@ -213,10 +215,15 @@ section {
 }
 
 .member-item img {
-  float: left;
-  margin: auto 1rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.member-item p {
-  margin-bottom: 1rem;
+.hide-first {
+  display: none;
+  transition: all 0.5s;
+}
+
+.member-item .img-wrapper:hover .hide-first {
+  display: block;
 }
