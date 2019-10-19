@@ -85,7 +85,7 @@ nav {
 #real-content .nav-item a:focus:active {
   color: #fff;
 
-  background-color: rgb(185, 185, 185);
+  background-color: #d38d8d;
 }
 
 .navbar-brand {

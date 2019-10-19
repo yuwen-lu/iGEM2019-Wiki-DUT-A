@@ -227,8 +227,11 @@ section {
 }
 
 .member-item img {
+  width: 13vw;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 1rem;
 }
 
 .img-wrapper {
@@ -237,7 +240,7 @@ section {
 
 .hide-first {
   border-radius: 4px;
-  background-color: #bbdfe2ab;
+  background-color: #ffc2c2da;
   position: absolute;
   top: 0;
   left: 13vw;
