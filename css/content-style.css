@@ -83,6 +83,18 @@ body {
   text-decoration: none;
 }
 
+.jump-to-top {
+  position: fixed;
+  right: 3vw;
+  bottom: 4vh;
+}
+
+.jump-to-top img {
+  width: 3vw;
+  height: auto;
+  opacity: 0.7;
+}
+
 .header-img {
   height: 60vh;
   width: 100vw;
