@@ -249,16 +249,19 @@ section {
 }
 
 .hide-first {
+  text-align: left;
   border-radius: 4px;
   background-color: #ffc2c2da;
   position: absolute;
   top: 0;
   left: 13vw;
   /* the width and height are the same as the image*/
-  width: 180px;
-  height: 230px;
+  width: 250px;
   visibility: hidden;
   opacity: 0;
+  padding: 1.5rem;
+  padding-bottom: 0.5rem;
+  z-index: 5;
   transition: visibility 0s, opacity 1s ease-in-out;
   -webkit-transition: visibility 0s, opacity 1s ease-in-out;
   -moz-transition: visibility 0s, opacity 1s ease-in-out;
