@@ -31,7 +31,13 @@ body {
   font-family: "Noto Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
 }
 
-#appreciation {
+#real-content #appreciation {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+#real-content #appreciation h4 {
+  font-size: 2rem;
   font-weight: 700;
 }
 
