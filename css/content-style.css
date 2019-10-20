@@ -26,6 +26,15 @@ body {
   margin: 1rem 0;
 }
 
+#real-content p {
+  font-size: 1rem;
+  font-family: "Noto Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+#appreciation {
+  font-weight: 700;
+}
+
 .icon {
   margin-right: 0.5rem;
   height: 2rem;

@@ -99,6 +99,11 @@
   padding: 6rem 0;
 }
 
+.section .grid-content p {
+  margin-top: 1rem;
+  text-align: justify;
+}
+
 .section-bgcolor {
   background: #f6ede7;
 }
