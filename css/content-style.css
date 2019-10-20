@@ -222,7 +222,7 @@ section {
   display: block;
   margin: 2rem auto; /*left and right auto ensures it's centered*/
 
-  width: 60vw;
+  width: 60%;
 }
 
 #member-container {
