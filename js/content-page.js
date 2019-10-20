@@ -7,6 +7,7 @@ content.style.top = "-" + sideNavHeight.toString() + "px";
 // stop the sidenav when hitting the footer
 let footer = document.getElementById("footer");
 let footerTop = footer.getBoundingClientRect().top;
+let windowHeight = window.innerHeight;
 
 window.addEventListener("scroll", () => {
   let footerTop = footer.getBoundingClientRect().top;
@@ -23,7 +24,7 @@ window.addEventListener("scroll", () => {
 });
 
 // change the font of the currently viewing section in the side-nav
-let windowHeight = window.innerHeight;
+
 let sections = document.querySelectorAll("section");
 let sideNavItems = document.getElementsByClassName("side-nav-item");
 
