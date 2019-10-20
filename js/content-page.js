@@ -4,6 +4,24 @@ let sideNavHeight = sideNav.clientHeight * 1.2;
 let content = document.getElementsByClassName("content-container")[0];
 content.style.top = "-" + sideNavHeight.toString() + "px";
 
+// stop the sidenav when hitting the footer
+let footer = document.getElementById("footer");
+let footerTop = footer.getBoundingClientRect().top;
+
+window.addEventListener("scroll", () => {
+  let footerTop = footer.getBoundingClientRect().top;
+  let sidenavBottom = sideNav.getBoundingClientRect().bottom;
+  console.log(footerTop);
+  console.log("bottom: " + sidenavBottom);
+  if (sidenavBottom >= footerTop) {
+    console.log("hit");
+    sideNav.style.opacity = "0";
+  } else if (footerTop >= windowHeight) {
+    console.log("detatched");
+    sideNav.style.opacity = "1";
+  }
+});
+
 // change the font of the currently viewing section in the side-nav
 let windowHeight = window.innerHeight;
 let sections = document.querySelectorAll("section");

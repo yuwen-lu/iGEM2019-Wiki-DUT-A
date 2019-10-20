@@ -83,6 +83,8 @@ body {
   margin-left: 3vw;
   text-align: center;
   border-right: solid 4px #fdb4b4;
+
+  transition: opacity 0.5s;
 }
 
 .side-nav h3,
