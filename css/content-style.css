@@ -245,7 +245,7 @@ section {
 .member-item {
   display: inline-block;
   width: 18vw;
-  height: 50vh;
+  height: 55vh;
   text-align: center;
   margin: 2rem 4rem;
   padding: 3rem 2rem;
@@ -253,7 +253,7 @@ section {
   border-radius: 2rem;
 }
 
-.member-item img {
+.member-item .profile-pic {
   width: 13vw;
   height: auto;
   margin-left: auto;
@@ -261,19 +261,27 @@ section {
   margin-bottom: 1rem;
 }
 
+.member-item h5 {
+  display: inline-block;
+}
+
+.member-item .member-icon {
+  width: 1.4rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.3rem;
+}
+
 .img-wrapper {
   position: relative;
 }
 
 .hide-first {
-  text-align: left;
   border-radius: 4px;
   background-color: #ffc2c2da;
   position: absolute;
   top: 0;
   left: 13vw;
-  /* the width and height are the same as the image*/
-  width: 250px;
+  width: 18vw;
   visibility: hidden;
   opacity: 0;
   padding: 1.5rem;
@@ -286,6 +294,7 @@ section {
 
 .hide-first p {
   display: inline-block;
+  line-height: 1.7rem;
   margin-top: auto;
   margin-bottom: 1rem;
 }
