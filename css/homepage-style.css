@@ -17,7 +17,7 @@
 
 .fullscreen-video-wrap {
   position: absolute;
-  top: 0;
+  top: 160px;
   left: 0;
   background-image: url(../resources/homepage.jpg);
   background-size: cover;

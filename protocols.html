@@ -12,86 +12,157 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/content-style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-    <title>Lab Book</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <title>Protocols</title>
   </head>
   <body id="real-content">
     <div id="navigation"></div>
     <div class="header-img">
-      <img src="./resources/background/lab-book.jpg" />
-      <h1 class="page-title">Lab Book</h1>
+      <img src="https://2019.igem.org/wiki/images/a/a4/T--DUT_China_A--Protocals-bg.png" />
     </div>
     <!-- <a href="javascript:void(0)" id="open-nav" onclick="openNav()"><i class="arrow-left"></i></a> -->
     <div class="side-nav">
-      <h4>September</h4>
-      <a href="#sep-10" class="side-nav-item">Sep 10th</a>
-      <a href="#sep-11" class="side-nav-item">Sep 11th</a>
-      <a href="#sep-12" class="side-nav-item">Sep 12th</a>
-      <a href="#sep-13" class="side-nav-item">Sep 13th</a>
+      <h4>Protocols</h4>
+      <a href="#cell-culture" class="side-nav-item">Cell Culture</a>
+      <a href="#binding-buffer" class="side-nav-item">Binding Buffer</a>
+      <a href="#cell-and-aptamer-binding" class="side-nav-item">Cell - Aptamer</a>
+      <a href="#prepare-circular-template" class="side-nav-item">Circular Template</a>
+      <a href="#dna-page" class="side-nav-item">DNA PAGE</a>
+      <a href="#dna-prep-without-cell" class="side-nav-item">DNA Hydrogel</a>
+      
       <!-- <a href="javascript:void(0)" onclick="closeNav()"><i id="close-nav" class="arrow-right"></i></a> -->
     </div>
     <div class="content-container">
-        <section id="sep-10">
-          <h3><img class="icon" src="./resources/icons/lab-book.png" alt=""> September 10th</h3>
+      <section id="cell-culture">
+        <h3>
+          <img class="icon" src="https://2019.igem.org/wiki/images/1/1c/T--DUT_China_A--Protocals-icon.png" alt="" /> Cell
+          Culture
+        </h3>
         <p>
-          <h4>1. Prepare hydrogels through RCA</h4>
-          Add 20μl of annular template and 20μl of Aptamer-Primer 1 to a
-          centrifuge tube with 160μL TE solution, mix and incubate them at room
-          temperature for 2 hours.
-          <h4>2. The R-process</h4>
-          Divide 100 ul solution evenly into 2 centrifuge tube, 100ul of reaction
-          solution and PBS solution were added respectively to two tubes. Then,
-          add 20ul of dNTP, 10ul pf φ29 buffer and 1ul of φ29. After the mixing,
-          add 115ul of the mixture into 96-well plate and let it incubate at 30 °C
-          for 40min.
-          <h4>3. The M-Process</h4> 
-          1 ul of primer 2 and primer 3 were added to each well
-          and then incubate at 30 ° C for 16 h.
+            <ol>
+                <li>Aspirate off the cell medium.</li>
+                <li>Wash the cells with 2 mL PBS and the aspirate off the PBS.</li>
+                <li>Add 2 mL of Trypsin and wait for 3 to 5 min.</li>
+                <li>
+                  Add new cell medium to the culture flask. The FBS quenches the
+                  trypsinization.
+                </li>
+                <li>
+                  Pipette medium up and down, and squirt it around the surface of the
+                  dish to remove adherent cells from the surface. Move the cells into
+                  15 mL Falcon conical and centrifuge at 750 rpm for 5 min and discard
+                  supernatant.
+                </li>
+                <li>
+                  Add 3 mL PBS, pipette PBS up and down to mix the solution evenly.
+                  Centrifuge at 750 rpm for 5 min, discard supernatant.
+                </li>
+                <li>
+                  Add 3 mL PBS, pipette PBS up and down to mix the solution evenly.
+                  Centrifuge at 750 rpm for 5 min, discard supernatant.
+                </li>
+                <li>
+                  Add the medium according to the need and pipette the media up and
+                  down to mix the solution.
+                </li>
+                <li>
+                  Add 3 mL DMEM and move 1 mL of cells into new dishes. Spread the
+                  cells evenly by rocking the dish back and forth.
+                </li>
+                <strong>DO NOT</strong> spread the cells by swirling the media in a circular motion –
+                this results n clumping of cells in the middle of the dish.
+              </ol>
         </p>
+      </section>
+
+        <section id="binding-buffer">
+            <h3><img class="icon" src="https://2019.igem.org/wiki/images/1/1c/T--DUT_China_A--Protocals-icon.png" alt="" /> Binding Buffer</h3>
+            <p>The binding buffer is PBS buffer (pH=7.5) containing 0.1
+                mg/ml yeast tRNA.</p>
         </section>
-    <section id="sep-11">
-      <h3><img class="icon" src="./resources/icons/lab-book.png" alt="">September 11th</h3>
-      <p>
-        <h4>Hydrogels observation</h4>
-        Add 1ul of 100X GelRed to the four-well, add 1 ul of 100X GelRed to the four wells, stain the hydrogels with a nucleic acid dye, and observe the hydrogels in the UV on a gel imaging analyzer.
-        <img class="content-img" src="./resources/lab-book-sep11-1.jpg">
-        In the upper row of holes are the hydrogels made under the original literature buffer system (Tris, pH=8), and there is obvious accumulation of fluorescent spots, which can prove that the hydrogels form. In the lower row of wells are the hydrogels made under the predicted cell system (PBS, pH = 7.4), presenting weak fluorescence, we presume that they are hydrogels microparticles.
-        <br><br>lower buffer system does not be supplemented the dTT and bovine serum albumin in the original liquid system, which may lead to the poor gelation effect.
-        <br><br>Further experiments on Mg ion gradient buffers with dTT and bovine serum albumin are being performed to determine that whether hydrogels can still form in the cell environment.
-        <br><br>The hydrogels in the Tris system are clearly cross-linked to each other, and the hydrogels in the PBS system exists only in the form of particles. Gelred should exhibit red light under the action of ultraviolet excitation light, and the blue fluorescence of the gel in the Tris system is unknown.
-        <img src="./resources/lab-book-sep11-2.png" class="content-img">
-        <br><br>The hydrogels in the Tris system are clearly cross-linked to each other, and the hydrogels in the PBS system exist in the form of particles. Gelred should exhibit red light under the action of ultraviolet excitation light, and why the hydrogels exhibit blue fluorescence in the Tris system is unknown.
-      </p>
-    </section>
-    <section id="sep-12">
-      <h3><img class="icon" src="./resources/icons/lab-book.png" alt="">September 12th</h3>
-      <p>
-        <h4>Exploration for the right RCA system condition</h4>
-        <h5 class="sub-sub-title">1. Preparation for the reaction system solution</h5>
-        There are 7 groups of parallel experiments; phi29 buffer system, tris-HCl system (three groups, Mg ion concentration of 10mM, 20mM, 30mM), PBS system (three groups, the same gradient as Tris-HCl system)
-        <br><br>>Preparation for the tris-HCl system: Tris 0.455g, ammonium sulfate 0.02g, DTT 9.25mg, bovine serum albumin 3mg dissolve in ddH20 to the volume of 15ml, evenly divided it into three tubes, then respectively add 10mg,20mg and 30 mg of magnesium chloride hexahydrate, getting a reaction solution of a tris-HCl system with Mg ion concentration of 10 mM, 20 mM, and 30 mM.
-        <br><br>Preparation for the PBS system: Dissolve a piece of Tablet in 10ml of ddH20. Add 0.02g of Ammonium sulfate, 9.25mg of DTT, 3 mg of bovine serum albumin to ddH20 to the volume of 13.5ml. Then add 1.5ml of 10XPBS. It is evenly divided into three tubes. Then respectively add 10mg, 20mg and 30 mg of magnesium chloride hexahydrate, getting a reaction solution of a tris-HCl system with Mg ion concentration of 10 mM, 20 mM, and 30 mM.
-        <h5 class="sub-sub-title">2. Preparation of hydrogels through RCA</h5>
-            1. Hybridization the circular template the primer: 
-            <br>
-            Add 80 uL of TE solution,10 ul of circular template and 10 ul of Aptamer-Primer 1 and 1 ul of 100XGelRed per well in a 96-well plate, mix them and incubate at room temperature for 2 hours.
-            <br><br>
-            2. The R-Process 
-            <br>
-            Add 50 ul of the above seven reaction solutions in each well, and then add 10 ul of dNTP, 0.5 ul pf φ29; mix them and incubate at 30 ° C for 40 min.
-            <br><br>
-            3. The M-Process
-            <br>
-            Add 1 ul of primer 2 and 3 to each well and continue to incubate at 30 ° C for 16 h.
-      </p>
-    </section>
-    <section id="sep-13">
-      <h3><img class="icon" src="./resources/icons/lab-book.png" alt="">September 13th</h3>
-      <p>
-        <h4>Hydrogels observation:</h4>
-        After 16 hours, the hydrogels are observed in the UV on a gel imaging analyzer.
-      </p>
-    </section>
+      
+        <section id="cell-and-aptamer-binding">
+            <h3>
+                <img class="icon" src="https://2019.igem.org/wiki/images/1/1c/T--DUT_China_A--Protocals-icon.png" alt="" />Cell and Aptamer Binding</h3>
+            <ol>
+              <li>Aspirate off the cell media.</li>
+              <li>Wash the cells with appropriate volume of binding buffer.</li>
+              <li>Incubate with appropriate amount of binding buffer for 30 min at 37 °C.
+                  (Add different volumes of binding buffer to cells cultured on different
+                  plates. For example, add 200 μL per well to a 96-well plate and 500 μL to
+                  a 48-well plate.)</li>
+                  <li>Aspirate the binding buffer and incubate with 200 μL
+                      of the aptamer (diluted to 200 nM with binding buffer) for 2 hours.</li>
+                      <li>Aspirate the solution and wash three times with PBS.</li>
+      
+            </ol> 
+        </section>
+      
+        <section id="prepare-circular-template">
+            <h3>
+                <img class="icon" src="https://2019.igem.org/wiki/images/1/1c/T--DUT_China_A--Protocals-icon.png" alt="" />Prepare the Circular Template</h3>
+            <ol>
+              <li>Heat the 5’ prime-phosphorylated linear ssDNA
+                  (30μM，8.00μL) and primer 3 (90μM，10.00μL) at 85℃ for 5 min, cool down to
+                  the room temperature (RT).</li>
+                  <li>Add 2 μL T4 DNA ligase (20 U/μL) and 2.22 μL 10×Ligation buffer. Incubate the mixture at 16℃ for 16 h.</li>
+                  <li>Add 5.00 μL Exonuclease I (5 U/μL) and 1.5 μL Exonuclease III (100 U/μL) and incubate at 37 ℃ for 4 h to digest uncycled oligonucleotides.</li>
+                  <li>Deactivated the enzymes by heating the mixture at 70℃ for 5 min.</li>
+            </ol>
+        </section>
+      
+        <section id="dna-page">
+            <h3>
+                <img class="icon" src="https://2019.igem.org/wiki/images/1/1c/T--DUT_China_A--Protocals-icon.png" alt="" />DNA Polyacrylamide Gel Electrophoresis (PAGE)</h3>
+                <ol>
+                  <li><strong>Prepare a 12% denaturing gel (take 20 mL as an example)</strong></li>
+                  <ul>
+                    <li>Add 12 mL of 20% acrylamide, 4 mL of 10×TBE and 4 mL ddH2O to the breaker.</li>
+                    <li>Add 10% ammonium persulfate and 10 μL TEMED.</li>
+                    <li>Mix the solution.</li>
+                    <li>Soak the glass plates in 20% alcohol, dry them and assemble two pieces together.</li>
+                    <li>Add the solution between two glasses by using a pipette with no air bubbles.</li>
+                    <li>Insert the comb and place it at room temperature for 1 h to form gel.</li>
+                  </ul>
+                  <li><strong>Electrophoresis</strong></li>
+                  <ul>
+                    <li>Install the gel into the electrophoresis tank, pour 0.5×TBE as the electrophoresis buffer and make sure the buffer is enough to cover the sample lane.</li>
+                    <li>Add samples using a pipette (9 μL DNA sample with 1 μL of loading buffer for a total of 10 μL). Run the gel at 150 V for 10 MIN and at 80 V for another 1.5 h.</li>
+                  </ul>
+                  <li><strong>Dye</strong></li>
+                  <ul>
+                    <li>Prepare a staining solution: 30 μL of GelRed, 10 mL of 1 M NaCl, and 90 mL of ddH2O</li>
+                    <li>Gently take off the gel from the plate carefully and place it in a staining solution.</li>
+                    <li>Place it in the dark for 30 min.</li>
+                  </ul>
+                  
+                </ol>
+        </section>
+      
+        <section id="dna-prep-without-cell">
+            <h3>
+                <img class="icon" src="https://2019.igem.org/wiki/images/1/1c/T--DUT_China_A--Protocals-icon.png" alt="" />Preparation of DNA Hydrogel Without Cells</h3>
+                <ol>
+                  <li>10 μL of aptamer-linker was placed in a PCR tube, anneal at 95 ° C for 5 min, and cooled to 20 ° C.</li>
+                  <li>Add 30 ul of TE buffer (pH = 7.5) and10 μL of circular template to the tube, mix and incubate in a 30 ° C incubator for 2 h.</li>
+                  <li>Add 8 μL of 10X phi29 reaction buffer (pH=7.4), 0.4 μL of BSA, 20 μL dNTP mixer, 1 ul phi29 DNA polymerase (Haigene) to the tube, and incubate in a 30 ° C incubator for 40 min.</li>
+                  <li>Add 5ul of primer 2 and primer 3, incubate at 30 ° C.</li>
+                </ol>
+        </section>
+
+        <section id="dna-prep-with-cell">
+            <h3>
+                <img class="icon" src="https://2019.igem.org/wiki/images/1/1c/T--DUT_China_A--Protocals-icon.png" alt="" />Preparation of DNA hydrogel with cells</h3>
+                <ol>
+                  <li>Add 30 ul of TE buffer (pH = 7.5) to the cells that have bound with aptamer, 10 μL of the circular template, and mix and incubate in a 37 ° carbon dioxide incubator for 2 h.</li>
+                  <li>Add 8 μL of 10X phi29 reaction buffer (pH=7.4), 0.4 μL of BSA, 20 μL dNTP mixer, 1 ul phi29 DNA polymerase (Haigene) to the culture dish, and incubate for 40 min in a 37 ° C carbon dioxide incubator.</li>
+                  <li>Add 5 ul of primer 2 and primer 3 and incubate in a 37 ° carbon dioxide incubator.</li>
+                </ol>
+        </section>
+       
     </div>
     <div id="footer"></div>
   </body>
