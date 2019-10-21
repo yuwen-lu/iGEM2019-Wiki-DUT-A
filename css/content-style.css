@@ -122,6 +122,47 @@ body {
   opacity: 0.7;
 }
 
+#awards-title {
+  margin: 2rem !important;
+  text-align: center;
+}
+
+.awards-left {
+  background-color: #fccccc;
+  border: white solid 1px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.awards-right {
+  background-color: #fccccc;
+  padding: 1rem;
+  border: white 1px solid;
+  font-weight: 600;
+}
+
+.awards-item,
+.awards-item ul li {
+  padding: 0.3rem 0;
+}
+
+.awards-item a {
+  font-weight: 550;
+  text-decoration: none;
+
+  color: #ff538fab;
+  transition: color 0.2s;
+}
+
+.awards-item a:hover {
+  text-decoration: none;
+
+  color: rgb(255, 255, 255);
+}
+
 .header-img {
   width: 100vw;
   overflow: hidden;
