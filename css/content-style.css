@@ -292,7 +292,7 @@ section {
 .member-item {
   display: inline-block;
   width: 18vw;
-  height: 55vh;
+  height: auto;
   text-align: center;
   margin: 2rem 4rem;
   padding: 3rem 2rem;
