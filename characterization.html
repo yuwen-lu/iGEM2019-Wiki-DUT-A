@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="shortcut icon"
+      href="./resources/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/content-style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  </head>
+  <body id="real-content">
+    <div id="navigation"></div>
+    <div class="header-img">
+      <img src="./resources/background/Characterization.jpg" />
+    </div>
+    <div class="side-nav">
+      <a href="#vision" class="side-nav-item">Our Vision</a>
+      <a href="#principle" class="side-nav-item">Principle</a>
+      <a href="#materials-protocol" class="side-nav-item">Materials & Protocol</a>
+    </div>
+    <div class="jump-to-top">
+      <a href="#"><img src="./resources/jump-to-top.png" alt="TOP"></a>
+    </div>
+    <div class="content-container">
+        <section id="vision">
+          <h3><img class="icon" src="./resources/icons/protocol.png" alt="">Our vision & The parts we characterize</h3>
+        <p>
+                Team DUT_China_A 2019 dedicate themselves to convey the concept of functional DNA application across iGEM and we would like to provide iGEM community with available functional DNA. Therefore, we add experimental characterization data to the aptamers constructed by Team Heidelberg and we improve their parts.
+                <br><br>They conceived and implemented an open-source software for the design of aptamers (MAWS) as a fast and affordable alternative to the laborious SELEX procedure.
+                <br><br>1. BBa_K1614009- software generated kanamycin aptamer (candidate 1)
+                <br>3. BBa_K1614017- software generated kanamycin aptamer (candidate 3)
+                <br><br>To test these aptamers whether they can bind to kanamycin, we put forward a plan, Gold nanoparticle-based colorimetric detection.
+        </p>
+        </section>
+    <section id="principle">
+      <h3><img class="icon" src="./resources/icons/protocol.png" alt="">Principle</h3>
+      <p>
+       
+            Gold nanoparticles (Au NPs) covered by Citrate ion are charged negatively and they repel each other, remaining dispersive in the solution. After adding NaCl into this solution system, the double electrode layer of the Au NPs are destroyed and they tend to being coagulated, resulting the color of the solution changes from red to blue-purple, and the spectrum of the solution shifts red. The absorbance of 620nm obviously increase. However, short ssDNA are readily adsorbed onto the surface of AuNPs without any modification and that such ssDNA-treated AuNPs are more stable than untreated ones.  Adding aptamers into the system, the citrate root of nano gold surface is replaced. AuNPs can still remain negatively charged instead of being coagulated even if there is NaCl due to the non-specific interaction between DNA side chain phosphate groups and Au NPs, keeping the solution color red. When kanamycin, the determinand is added in to the solution, the adaptor configuration changes and falls off the surface of the Au NPs because there is affinity between the kanamycin and the aptamers. AuNPs is going to coagulate. The changing concentrations of kanamycin lead to the changing AuNPs solution spectra. Adopting this method, the binding of the aptamer to kanamycin can be tested and the kanamycin in the solution can be easily and quickly detected.
+
+        </p>
+    </section>
+    <section id="materials-protocol">
+      <h3><img class="icon" src="./resources/icons/protocol.png" alt="">Materials & Protocol</h3>
+      <p>
+        <h4>3.1 Materials</h4>
+        Kanamycin aptamers<br>
+        ① 5‘-TTCTCTC-3’<br>
+        ② 5’-GCTGTCG-3’<br>
+
+        <h4>3.2 Protocol, Results and Discussion</h4>
+        <h5>3.2.0 Preparation for Au NPs</h5>
+        Add 125mL HAuCl(1mM) water solution to 250mL round bottom flask. Heat it until boils then quickly add 12.5 mL (38.8mM) sodium citrate solution into this system. Heat for 10min, remove the heating sleeve, stir for 15min. Cool to room temperature and obtain Au NPs with particle size of about 13nm.<br>
+        <strong>3.2.1.1 Exploration on the least concentration of NaCl to precipitate a certain concentration of Au NPs</strong><br>
+        We fabricate Au NPs systems with different concentration of NaCl in 96 well plates and measure their absorbance ratios at wavelengths of 520 nm and 620 nm, which is shown in figure.1 and figure.2.
+        <img class="content-img" src="https://2019.igem.org/wiki/images/9/98/T--DUT_China_A--characterization-1.png" alt="">
+        <div class="img-comment">Figure.1 A620/A520 of Au NPs systems determined by the concentration of NaCl.<br> The concentration of gold nanoparticle is 150 nM.</div>
+        <img src="https://2019.igem.org/wiki/images/6/65/T--DUT_China_A--characterization-2.png" alt="" class="content-img">
+        <div class="img-comment">Figure.2 Colors of AuNPs (150 nM) without NaCl (a) and with 50 nM of NaCl (b).<br>The right graph shows absorption spectra of a and b.</div>
+        Obviously, the trend line of A620/A520 reaches a plateau when the concentration of NaCl comes to 0.045 M. We can assume that 0.045 M of NaCl is able to precipitate all the Au NPs in this system.
+        <br><br>In the following experiments, we will make the concentration of NaCl at 0.075 M in every system.
+
+        <h5>3.2.2. Explorations on the least concentration of Aptamer K1, K3 to protect all the Au NPs from being precipitated</h5>
+        Once there are extra aptamers in the solution system, they will bond to the kanamycin while the Au NPs are still totally protected, which will not lead to a change on A620/A520. We don’t want this happen. Therefore, we must ensure that the aptamers at the working concentration are not excessive.
+        <br><br>
+        <div class="row">
+                <div class="col-6">
+                        <strong>3.2.2.1 Exploration on the least concentration of Aptamer K1 to protect all the Au NPs from being precipitated</strong><br>
+                        We fabricate Au NPs systems with different concentration of Aptamer K1 in 96 well plates when the NaCl is 0.075 M and measure their absorbance ratios at wavelengths of 520 nm and 620 nm, which is shown in figure.3.
+                        <img src="https://2019.igem.org/wiki/images/7/7e/T--DUT_China_A--characterization-4.png" alt="" class="content-img">
+                        <div class="img-comment">Figure.3 A620/A520 of Au NPs systems determined by the concentration of Aptamer K1. <br>The concentration of Au NPs is 150 nM. <br>
+                            The concentration of NaCl is 0.075 M.</div>
+                            <br>Obviously, the trend line of A620/A520 is likely to just reach a plateau when the concentration of Aptamer K1 comes to 0.20 μM. We can assume that Aptamers K1 at this amount are just enough to protect all the Au NPs at 150 nM.
+                            <br><br>In the following experiment 3.2.3.1, we will make the concentration of Aptamer K1 at 0.20 μM in the system.
+            
+                    </div>
+                    <div class="col-6">
+                        <strong>3.2.2.2 Exploration on the least concentration of Aptamer K3 to protect all the Au NPs from being precipitated</strong><br>
+                        We fabricate Au NPs systems with different concentration of Aptamer K3 in 96 well plates when the NaCl is 0.075 M and measure their absorbance ratios at wavelengths of 520 nm and 620 nm, which is shown in figure.3.
+                        <img src="https://2019.igem.org/wiki/images/9/90/T--DUT_China_A--characterization-5.png" alt="" class="content-img">
+                        <div class="img-comment">Figure.4 A620/A520 of Au NPs systems determined by the concentration of Aptamer K3. <br>The concentration of Au NPs is 150 nM. <br>The concentration of NaCl is 0.075 M.</div>
+                        <br>Obviously, the trend line of A620/A520 is likely to just reach a plateau when the concentration of Aptamer K3 comes to 0.20 μM. We can assume that Aptamers K3 at this amount are just enough to protect all the Au NPs at 150 nM.
+                        <br><br>In the following experiment 3.2.3.2, we will make the concentration of Aptamer K3 at 0.20 μM in the system.
+
+                    </div>
+        </div>
+        <h5>3.2.3. Characterization of Aptamers</h5>
+        As the principle indicates, once the A620/A520 declines with the increasing concentration of Kanamycin, it can be proved that our aptamers can bind to Kanamycin efficiently.<br><br>
+        <div class="row">
+            <div class="col-6">
+                <strong>3.2.3.1 Characterization of Aptamers K1</strong><br>
+                Incubate 150 nM of AuNP and 0.20μM of Aptamer K1 for 30min at 37℃, with system volume being 200 μL. Add different concentrations of kanamycin into the system with the final concentration of kanamycin between 0 and 0.45 μM.
+                <br><br>Add 5μL, 3M of NaCl solution, making its final concentration at 0.075 M. All these steps are done in 96-well plates. Measure the absorbance at 620nm and 520nm by uv-vis spectrometer, and the changes of A 620 / A 520 are recorded and analyzed, which is shown in figure.5.
+                <img src="https://2019.igem.org/wiki/images/7/7e/T--DUT_China_A--characterization-6.png" alt="" class="content-img">
+                <div class="img-comment">Figure.5 A620/A520 of Au NPs systems determined by the concentration of Kanamycin. The concentration of Au NPs is 150 nM. <br>The concentration of NaCl is 0.075 M. <br>The concentration of Aptamer K1 is 0.20 μM.</div>
+                As the trend line in Figure.5 shows, A620/A520 changes as the concentration of kanamycin changes and finally reaches a plateau, indicating that the changing concentrations of kanamycin lead to the changing AuNPs solution spectra. We can make a conclusion that there is binding between Aptamer K1 and kanamycin.
+            </div>
+            <div class="col-6">
+                <strong>3.2.3.2 Characterization of Aptamers K3</strong><br>
+                Incubate 150 nM of AuNP and 0.20μM of Aptamer K3 for 30min at 37℃, with system volume being 200 μL. Add different concentrations of kanamycin into the system with the final concentration of kanamycin between 0 and 0.45 μM.
+                <br><br>Add 5μL, 3M of NaCl solution, making its final concentration at 0.075 M. All these steps are done in 96-well plates. Measure the absorbance at 620nm and 520nm by uv-vis spectrometer, and the changes of A 620 / A 520 are recorded and analyzed, which is shown in figure.6.
+                <img src="https://2019.igem.org/wiki/images/4/4f/T--DUT_China_A--characterization-7.png" alt="" class="content-img">
+                <div class="img-comment">Figure.6 A620/A520 of Au NPs systems determined by the concentration of Kanamycin. <br>The concentration of Au NPs is 150 nM. <br>The concentration of NaCl is 0.075 M. <br>The concentration of Aptamer K3 is 0.20 μM.</div>
+                As the trend line in Figure.6 shows, A620/A520 changes as the concentration of kanamycin changes and finally reaches a plateau, indicating that the changing concentrations of kanamycin lead to the changing AuNPs solution spectra. We can make a conclusion that there is binding between Aptamer K3 and kanamycin.
+
+
+            </div>
+        </div>
+      </p>
+    </section>
+    </div>
+    <div id="footer"></div>
+  </body>
+  <script src="./js/jquery-3.4.1.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/content-page.js"></script>
+  <script>
+    $(function() {
+      $("#navigation").load("./navigation.html");
+      $("#footer").load("./footer.html");
+    });
+  </script>
+</html>
