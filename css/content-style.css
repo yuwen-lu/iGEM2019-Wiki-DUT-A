@@ -31,6 +31,10 @@ body {
   font-family: "Noto Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
 }
 
+#real-content a {
+  text-decoration: none;
+}
+
 #real-content #appreciation {
   margin-top: 5rem;
   text-align: center;
@@ -94,7 +98,6 @@ body {
 }
 
 .side-nav a {
-  text-decoration: none;
   display: block;
   /* padding-left: 1rem; */
   margin-left: 1vw;
@@ -107,7 +110,6 @@ body {
 
 .side-nav a:hover {
   color: #fdb4b4;
-  text-decoration: none;
 }
 
 .jump-to-top {
@@ -147,6 +149,10 @@ body {
 .awards-item,
 .awards-item ul li {
   padding: 0.3rem 0;
+}
+
+#real-content .awards-item h5 {
+  margin-top: 2rem;
 }
 
 .awards-item a {
