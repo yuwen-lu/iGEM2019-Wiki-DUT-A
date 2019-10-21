@@ -130,7 +130,7 @@ body {
 }
 
 .awards-left {
-  background-color: #fccccc;
+  background-color: #fce8e8;
   border: white solid 1px;
 
   display: flex;
@@ -140,7 +140,7 @@ body {
 }
 
 .awards-right {
-  background-color: #fccccc;
+  background-color: #fce8e8;
   padding: 1rem;
   border: white 1px solid;
   font-weight: 600;
