@@ -20,80 +20,226 @@
     <div class="header-img">
       <img src="./resources/background/Model.jpg" />
     </div>
-    <!-- <a href="javascript:void(0)" id="open-nav" onclick="openNav()"><i class="arrow-left"></i></a> -->
     <div class="side-nav">
-      <h4>September</h4>
-      <a href="#sep-10" class="side-nav-item">Sep 10th</a>
-      <a href="#sep-11" class="side-nav-item">Sep 11th</a>
-      <a href="#sep-12" class="side-nav-item">Sep 12th</a>
-      <a href="#sep-13" class="side-nav-item">Sep 13th</a>
-      <!-- <a href="javascript:void(0)" onclick="closeNav()"><i id="close-nav" class="arrow-right"></i></a> -->
+      <h4>Model</h4>
+      <a href="#introduction" class="side-nav-item">Introduction</a>
+      <a href="#apatamer-target" class="side-nav-item">Apatamer & Target Sites</a>
+      <a href="#inhibitor-determination" class="side-nav-item">Inhibitor</a>
+      <a href="#appropriate-time" class="side-nav-item">Appropriate Time</a>
     </div>
     <div class="content-container">
-        <section id="sep-10">
-          <h3><img class="icon" src="./resources/icons/lab-book.png" alt=""> September 10th</h3>
+        <section id="introduction">
+          <h3><img class="icon" src="./resources/icons/model.png" alt="">Introduction</h3>
         <p>
-          <h4>1. Prepare hydrogels through RCA</h4>
-          Add 20μl of annular template and 20μl of Aptamer-Primer 1 to a
-          centrifuge tube with 160μL TE solution, mix and incubate them at room
-          temperature for 2 hours.
-          <h4>2. The R-process</h4>
-          Divide 100 ul solution evenly into 2 centrifuge tube, 100ul of reaction
-          solution and PBS solution were added respectively to two tubes. Then,
-          add 20ul of dNTP, 10ul pf φ29 buffer and 1ul of φ29. After the mixing,
-          add 115ul of the mixture into 96-well plate and let it incubate at 30 °C
-          for 40min.
-          <h4>3. The M-Process</h4> 
-          1 ul of primer 2 and primer 3 were added to each well
-          and then incubate at 30 ° C for 16 h.
+          <h4>1. What is our model</h4>
+          We use mathematical modeling to determine parameters and narrow our range of options. Specifically, three models were adopted for our project: The binding of aptamer to target sites，Determination of inhibitor and the appropriate time for growth of hydrogels.<br><br>
+          In the first model，we establish a differential equation based on the molecular mechanism in cell micro-environment and solving them.<br><br>
+          In the second model, we interpreted the issue as an optimization problem and used thermodynamics theory to quantify objective function and constraint function.<br><br>
+          In the third model, we use post feedback neural network to predict the radius of colloidal particles in given time. By training the network with experimental data, we can get an approximate mapping from time to radius of colloidal particles.
+          <h4>2. Why modeling?</h4>
+          The main purpose of our modeling is to determine or narrow some options for experiments. For example, the determination of inhibitor, the binding of aptamer to target sites, and the appropriate time for growth of hydrogels need to be modeled. With the preliminary theoretical reference, the members in the experimental group can do the experiment effectively.<br>
+          <h4>3. What help does the experiment provide for the model?</h4>
+          The experiments provide us with necessary data, such as MFI in the binding of aptamer to target sites and the data of micelle radius in the appropriate time for growth of hydrogels. The former helps us determine the parameters and verify the model, and the latter helps us train the network.
+          <h4>4. How does the model guide the experiment？</h4>
+          The process of solving the model parameters guides the experiment. For example, we need to determine the reaction rate constant in the binding of aptamer to target sites. Therefore, we did the experiment of target binding to aptamer by fluorescence labeling on aptamer. The residual concentration of the aptamers in the reaction equilibrium is obtained by fluorescence intensity, and the rate constants can be solved by it.<br>
         </p>
         </section>
-    <section id="sep-11">
-      <h3><img class="icon" src="./resources/icons/lab-book.png" alt="">September 11th</h3>
+    <section id="apatamer-target">
+      <h3><img class="icon" src="./resources/icons/model.png" alt="">The binding of aptamer to target sites</h3>
       <p>
-        <h4>Hydrogels observation</h4>
-        Add 1ul of 100X GelRed to the four-well, add 1 ul of 100X GelRed to the four wells, stain the hydrogels with a nucleic acid dye, and observe the hydrogels in the UV on a gel imaging analyzer.
-        <img class="content-img" src="./resources/lab-book-sep11-1.jpg">
-        In the upper row of holes are the hydrogels made under the original literature buffer system (Tris, pH=8), and there is obvious accumulation of fluorescent spots, which can prove that the hydrogels form. In the lower row of wells are the hydrogels made under the predicted cell system (PBS, pH = 7.4), presenting weak fluorescence, we presume that they are hydrogels microparticles.
-        <br><br>lower buffer system does not be supplemented the dTT and bovine serum albumin in the original liquid system, which may lead to the poor gelation effect.
-        <br><br>Further experiments on Mg ion gradient buffers with dTT and bovine serum albumin are being performed to determine that whether hydrogels can still form in the cell environment.
-        <br><br>The hydrogels in the Tris system are clearly cross-linked to each other, and the hydrogels in the PBS system exists only in the form of particles. Gelred should exhibit red light under the action of ultraviolet excitation light, and the blue fluorescence of the gel in the Tris system is unknown.
-        <img src="./resources/lab-book-sep11-2.png" class="content-img">
-        <br><br>The hydrogels in the Tris system are clearly cross-linked to each other, and the hydrogels in the PBS system exist in the form of particles. Gelred should exhibit red light under the action of ultraviolet excitation light, and why the hydrogels exhibit blue fluorescence in the Tris system is unknown.
+          In our experiments, an important step is to combine the aptamers with the cell targets, and subsequently produce hydrogels. However, Cells will not be fully reacted if they react for too short time and be damaged if they react for too long time, which both affect the formation of hydrogels. Therefore, it is very important to find a suitable combination time.<br><br>
+          The binding reaction between aptamer and target spots is the first-order kinetics：<br>
+          <div style="text-align: center;">aptamer+target↔a-t</div><br>
+          There is a chemical positive reaction rate equation:
+
+          $$\begin{equation}
+          v_1=kc_a(t)c_t(t)
+          \end{equation}
+          $$ <div style="text-align: right;">(2.1)</div>
+          Similarly, the chemical inverse reaction can be described by the following one.
+          $$\begin{equation}
+          v_2=\frac{1}{k}c_{a-t}(t)
+          \end{equation}
+          $$<div style="text-align: right;">(2.2)</div>
+          \(c_a(t)\), \(c_t(t)\) is the residual concentration of aptamer and target over time t. k is the constant of chemical reaction rate. Therefore, it can be considered that the total reaction rate v=\(v_1\)-\(v_2\). When v = 0, the chemical reaction is in equilibrium. Then we can get a differential equation:
+
+          $$\begin{equation}
+          -\frac{dc_a(t)}{dt}=-\frac{dc_t(t)}{dt}=v=v_1-v_2=kc_a(t)c_t(t)-\frac{1}{k}c_{a-t}(t)
+          \end{equation}
+          $$<div style="text-align: right;">(2.3)</div>
+
+          Through the relationship among  \(c_t (t)\) and \(c_(a-t) (t)\), we know that:
+          $$\begin{equation}
+          c_a(t)-c_a(0)=c_t(t)-c_t(0)=-c_{a-t}(t)
+          \end{equation}
+          $$<div style="text-align: right;">(2.4)</div>
+          Then, based on the equation (1.1), (1.2), (1.3) and (1.4), we can get the following equation：
+          $$\begin{equation}
+          -\frac{dc_a(t)}{dt}=k[c_t(0)-c_a(t)+c_a(t)]c_a(t)-\frac{1}{k}[c_a(0)-c_a(t)]
+          \end{equation}
+          $$<div style="text-align: right;">(2.5)</div>
+          The solution is：
+          $$\begin{equation}
+          t=c_0-\frac{1}{k(x_1-x_2)}ln(\frac{c-x_1}{c-x_2})
+         \end{equation}
+         $$<div style="text-align: right;">(2.6)</div>
+         \(x_1\) and \(x_2\) are two roots of equation \(\begin{equation}
+         Kx^2+(mk+\frac{1}{k})x-\frac{c-a(0)}{k}=0
+         \end{equation}
+         \). \(\begin{equation}
+         m=c_t(0)-c_a(0)
+        \end{equation}
+        \), can be calculated from the initial concentration. Substituting the initial value into the equation (2.6)，the constant can be calculated: \(\begin{equation}
+        c_0=frac{1}{k(x_1-x_2)}ln(\frac{c_a(0)-x_1}{c_a(0)-x_2})
+        \end{equation}
+        \)<br><br>
+        In the experiment, we added the concentration of target point, \(c_t (0)=8.3*10^(-10)~1.6*10^(-8) mol*L^(-1)\), which had little effect on M, so we finally confirm \(c_t (0)=10^(-8) mol*L^(-1)\), \(c_a (0)=2*10^(-7) mol*L^(-1)\). 
+        According to the experimental data, when the reaction is in equilibrium, \(c_a=115*10^(-9) mol*L^(-1)\).<br><br>
+        When the reaction is in equilibrium，we can consider the time as infinity.
+
+        <img src="https://2019.igem.org/wiki/images/8/82/T--DUT_China_A--model-formula.png" alt="" class="content-img"><div style="text-align: right;">(2.7)</div>
+
+        The solution is：$$k=1.5567* 10 ^3$$
+        Based on Table 1 we calculated the fitted curve between concentration and MFI.y=16.05x+110.31.y is concentration, while x id MFI. According to the function and the experimental data of MFI over time, we compute the changes of concentration over time. The specific results are shown in the Table 2.
+
+        <img src="https://2019.igem.org/wiki/images/a/aa/T--DUT_China_A--model-1.png" alt="" class="content-img">
+        <div class="img-comment">Table 1: concentration with MFI</div>
+        <img src="https://2019.igem.org/wiki/images/4/4b/T--DUT_China_A--model-2.png" alt="" class="content-img">
+        <div class="img-comment">Table 2: concentration over time</div>
+        By substituting K into the equation (1.6), the following results can be obtained (And compared with the experimental results):
+        <img src="https://2019.igem.org/wiki/images/4/42/T--DUT_China_A--model-3.png" alt="" class="content-img">
+        <div class="img-comment">Figure 1: The change of aptamer concentration with time</div>
+        It can be seen from the figure that the experimental data and the theoretical simulation value are basically consistent. According to the theoretical calculation value, when the reaction time reaches 1 hour, the reaction balance is basically reached. We can take one hour as the best time of experiment.
+        <h4>Conclusion</h4>
+        We set up an ordinary differential equation with parameters through the reaction rate equation, and solved the parameters through the experimental data, and determined a suitable reaction time of 1 hour for the experiment. This model can be applied to other first-order kinetics, the parameters can be determined by similar methods, then the theoretical value of the reaction can be obtained.
+
       </p>
     </section>
-    <section id="sep-12">
-      <h3><img class="icon" src="./resources/icons/lab-book.png" alt="">September 12th</h3>
+    <section id="inhibitor-determination">
+      <h3><img class="icon" src="./resources/icons/model.png" alt="">Determination of inhibitor</h3>
       <p>
-        <h4>Exploration for the right RCA system condition</h4>
-        <h5 class="sub-sub-title">1. Preparation for the reaction system solution</h5>
-        There are 7 groups of parallel experiments; phi29 buffer system, tris-HCl system (three groups, Mg ion concentration of 10mM, 20mM, 30mM), PBS system (three groups, the same gradient as Tris-HCl system)
-        <br><br>>Preparation for the tris-HCl system: Tris 0.455g, ammonium sulfate 0.02g, DTT 9.25mg, bovine serum albumin 3mg dissolve in ddH20 to the volume of 15ml, evenly divided it into three tubes, then respectively add 10mg,20mg and 30 mg of magnesium chloride hexahydrate, getting a reaction solution of a tris-HCl system with Mg ion concentration of 10 mM, 20 mM, and 30 mM.
-        <br><br>Preparation for the PBS system: Dissolve a piece of Tablet in 10ml of ddH20. Add 0.02g of Ammonium sulfate, 9.25mg of DTT, 3 mg of bovine serum albumin to ddH20 to the volume of 13.5ml. Then add 1.5ml of 10XPBS. It is evenly divided into three tubes. Then respectively add 10mg, 20mg and 30 mg of magnesium chloride hexahydrate, getting a reaction solution of a tris-HCl system with Mg ion concentration of 10 mM, 20 mM, and 30 mM.
-        <h5 class="sub-sub-title">2. Preparation of hydrogels through RCA</h5>
-            1. Hybridization the circular template the primer: 
-            <br>
-            Add 80 uL of TE solution,10 ul of circular template and 10 ul of Aptamer-Primer 1 and 1 ul of 100XGelRed per well in a 96-well plate, mix them and incubate at room temperature for 2 hours.
-            <br><br>
-            2. The R-Process 
-            <br>
-            Add 50 ul of the above seven reaction solutions in each well, and then add 10 ul of dNTP, 0.5 ul pf φ29; mix them and incubate at 30 ° C for 40 min.
-            <br><br>
-            3. The M-Process
-            <br>
-            Add 1 ul of primer 2 and 3 to each well and continue to incubate at 30 ° C for 16 h.
+          The reaction of aptamer binding to target is also the reaction of primer exposure. The exposure of Primer is directly related to the formation of hydrogel, so we need a suitable cover length to make the Primer stable enough before aptamer binds to the target, and to make the Primer smoothly exposed when aptamer binds to the target. In this way, we can compute a feasible region where we can optimize.<br><br>
+          <h4>3.1 Objective function</h4>
+          Aptamer is a single strand of DNA that is easy to have the phenomenon of self-rotation. In order to suppress the self-rotation of DNA, we need to maximize the length of the masking sequence in the feasible domain.<br><br>
+          2, The establishment of feasible domain<br>
+          The assumption of nearest neighbor method <a href="#reference">[1]</a> :<br>
+          The initial concentration of two single nucleic acid chains in the hybridization reaction is the same;<br>
+          ∙∙The nucleic acid hybridization reaction satisfies the distate model, i.e., the dechain and the formation of the double strand are always dynamically balanced;<br>
+          ∙∙The hybrid nucleic acid double strand is a single double helix structure.<br>
+          <h4>3.2 The first of the constraint function</h4>
+          Based on the assumption, we can compute the model in this way.
+          This reaction can be divided into two different reaction.
+          ①The first reaction is between aptamer and target protein:
+          $$\begin{equation}
+          AT \leftrightarrow A+T
+          \end{equation}
+          $$
+
+          The equilibrium constant of the reaction is:<br>
+
+          $$\begin{equation}
+          K_d1=\frac{c_ac_t}{c_at}
+          \end{equation}
+          $$
+
+          ②Another reaction is between aptamer and inhibitor
+          $$\begin{equation}
+          AI \leftrightarrow A+I
+          \end{equation}
+          $$
+
+          and the equilibrium constant of the reaction is:
+          $$\begin{equation}
+          K_d2=\frac{c_ac_I}{c_at}
+          \end{equation}
+          $$
+
+          The whole reaction is:
+          $$\begin{equation}
+          AC+P \leftrightarrow AP+C
+          \end{equation}
+          $$
+
+          To describe the direction and stability of the reaction, we introduce the thermodynamic concept of free energy.
+          $$\begin{equation}
+          \ ΔG_c=-RTln(K)
+          \end{equation}
+          $$<div style="text-align: right;">(3.1)</div>
+
+          \( ΔG_c\) is the free energy of the enzyme, R is the thermodynamic constant, T is the temperature, and K is the equilibrium constant of the chemical reaction. \(\begin{equation}
+          K=\frac{K_d1}{K_d2}
+          \end{equation}
+          \)
+
+          When the free energy of aptamer self folding is smaller than the complementary energy of aptamer and masking sequence, aptamer self folding can be prevented. So the first constraint function is:
+
+          $$\begin{equation}
+          \sum_{i=1}^{k-1}\ ΔG_i\leq\ ΔG_c
+          \end{equation}
+          $$<div style="text-align: right;">(3.2)</div>
+
+          \(ΔG_i\) is the \(ΔG\) of i-th and (i+1)-th base-pairs’ position. The different kinds of base-pairs’ Gibbs energy are shown below. K is the length of the inhibitor.
+          <img src="https://2019.igem.org/wiki/images/d/d5/T--DUT_China_A--model-4.png" alt="" class="content-img tall-img">
+          <div class="img-comment">Figure2：Base-pairs’ Gibbs energy</div>
+
+          <h4>3.3 The second constraint function</h4>
+          According to the thermodynamic model, in order to expose the inhibitor, it’s necessary that the Gibbs energy of aptamer is greater than that of inhibitor. The compute of the energy is another constraint condition.<br>
+          $$\begin{equation}
+          \sum_{i=1}^{k-1} ΔG_i\geq\ ΔG_a
+          \end{equation}
+          $$<div style="text-align: right;">(3.3)</div>
+
+          \(ΔG_a\)=-6.25, is the Gibbs energy of aptamer, computed by software oligo analyzer.
+          <h4>3.4 Solution</h4>
+          The results show that the inhibitor length of aptamer is 5-10. Considering the multi-objective optimization, and trying to prevent DNA self-folding, we found that the suitable number of inhibitor are 8 and 9 by experiment, so we finally chose 9 bases as the inhibitor of aptamer part, and the inhibitor of linker part is not limited, so we took 6 bases. Then we determined the masking sequence as TCAGGC-CACTACAGA<br>
+          <h4>3.5 Conclusion</h4>
+          The assumption of nearest neighbor method provides the theoretical basis for the quantification of the constraint function. It is the establishment of constraint functions that allow us to transform it into an optimization problem. Because of this model’s small computation, it’s easy to confirm the best length by exhaustive method. <br><br>
+          The basic idea is from another IGEM team in Xiamen university. Based on the existing results, we add a restriction function to prevent DNA single strand from self folding and find out the feasible region of inhibitor. Finally, we determined the inhibitor by experiments as follows: TCAGGC-CACTACAGA.
       </p>
     </section>
-    <section id="sep-13">
-      <h3><img class="icon" src="./resources/icons/lab-book.png" alt="">September 13th</h3>
+    <section id="appropriate-time">
+      <h3><img class="icon" src="./resources/icons/model.png" alt="">The appropriate time for growth of hydrogels</h3>
       <p>
-        <h4>Hydrogels observation:</h4>
-        After 16 hours, the hydrogels are observed in the UV on a gel imaging analyzer.
+          Hydrogel is a large number of DNA single chains generated by DNA rolling ring amplification. Because of its good structural characteristics, we use it as prison clothes. Because the whole environment is not suitable for cell survival, too long time will lead to cell death, and too short time will lead to failure to form, it is important to determine the forming time of hydrogel. First, we consider establishing differential equations to solve this problem, but the rate of DNA rolling ring amplification is difficult to express (There are many effects that are difficult to quantify, such as DNA degradation), and in order to describe this process theoretically, we still describe the derivation of differential equations. Finally, we decided to adopt the BP neural network to approximate the mapping from time to the radius of the hydrogel to solve it.
+          <h4>4.1 Establishment and solution of network</h4>
+          We normalize the data and use two hidden layers in network, the number of neurons in each layer is 3, the active function from input layer to hidden layer is logsig, and the active function from hidden layer to output layer is tansig. The specific structure is as follows:
+          <img src="https://2019.igem.org/wiki/images/7/7e/T--DUT_China_A--model-5.png" alt="" class="content-img">
+          After training with experimental data (Table 3), the mapping of the network is:<br>
+          <img src="https://2019.igem.org/wiki/images/f/f9/T--DUT_China_A--model-6.png" alt="" class="content-img">
+          <div class="img-comment">Figure 3: The mapping of the network</div>
+          So we get the suitable time:8 hours - 8 hours and 20 minutes.
+          <img src="https://2019.igem.org/wiki/images/9/99/T--DUT_China_A--model-7.png" alt="" class="content-img">
+          <div class="img-comment">Table 3: The radius of hydrogels particles over time</div>
+          <h4>4.2 Derivation of differential equation</h4>
+
+          <h1>GUUUUUUUUUUUUUUUUUUUNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNn</h1>
+          Notion:<br>
+A and B are linear structures of complementary ring chains<br>
+\(n_1\): The number of whole circle sequence in DNA chain A<br>
+\(n_2\): The number of whole circle sequence in DNA chain B<br>
+\(c_1\): The number of DNA chain A<br>
+\(c_2\): The number of DNA chain B<br>
+\(V(n_1,n_2,t)\): The rate of DNA rolling ring amplification<br><br>
+Considering the simultaneous reaction of multiple chains, the growth rate of the number of rings of A(B) is directly proportional to the number of base points, the ratio is V, where V is the reaction rate of a single chain, which is related to N1, N2 and time. The basic point is the starting position of the chain, and the number of base points of A and B is n_2-c_2+1, n_1-c_1.Similarly, the growth rate of A (B) chain number is directly proportional to B (A) chain number, and the ratio is V.<br><br>
+So we can get: <br><br>
+<img src="https://2019.igem.org/wiki/images/1/13/T--DUT_China_A--model-8.png" alt="" class="content-img tall-img">
+
+<h4>4.3 Conclusion</h4>
+We use experimental data and BP neural network to fit the mapping from time to hydrogel particle diameter. The suitable time for rolling ring amplification is 8 hours-8 hours and 20 minutes. After that, we set up the differential equations. Theoretically, knowing the change of the rate V about N1, N2 and T, we can numerically solve the change of the number of bases with time, but we did not find this relationship. We hope that our later research can make a breakthrough in this part.<br>
+
+<section id="reference">
+    <h3><img class="icon" src="./resources/icons/model.png" alt="">Reference</h3><br><br>
+    [1] JOHN SANTALUCIA, JR*, A unified view of polymer, dumbbell, and oligonucleotide DNA nearest-neighbor thermodynamics, Proc Natl Acad Sci Anal Chem, 1998, 95, 1460-1465.
+</section>
+
+
+
       </p>
     </section>
     </div>
     <div id="footer"></div>
   </body>
+  <script src="https://2019.igem.org/common/MathJax-2.5-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   <script src="./js/jquery-3.4.1.min.js"></script>
   <script src="./js/bootstrap.min.js"></script>
   <script src="./js/content-page.js"></script>

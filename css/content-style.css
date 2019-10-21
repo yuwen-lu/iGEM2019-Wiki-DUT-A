@@ -280,6 +280,10 @@ section {
   width: 60%;
 }
 
+.tall-img {
+  width: 30%;
+}
+
 #member-container {
   width: 80%;
   margin-right: auto;
