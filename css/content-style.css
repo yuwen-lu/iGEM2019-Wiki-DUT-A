@@ -350,3 +350,9 @@ section {
   visibility: visible;
   opacity: 1;
 }
+
+#real-content .img-comment {
+  color: grey;
+  font-size: 0.9rem;
+  text-align: center;
+}

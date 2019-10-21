@@ -41,7 +41,7 @@
   margin: 0;
   font-family: "Noto Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: 190%;
   color: #333;
   overflow-x: hidden;
   /*add padding to body so that the actual content won't be blocked by the navbar*/
