@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="shortcut icon"
+      href="./resources/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/content-style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <title>Validatity</title>
+  </head>
+  <body id="real-content">
+    <div id="navigation"></div>
+    <div class="header-img">
+      <img src="./resources/background/Validatity.jpg" />
+    </div>
+    <!-- <a href="javascript:void(0)" id="open-nav" onclick="openNav()"><i class="arrow-left"></i></a> -->
+
+    <div class="content-container-no-sidebar">
+      <h3>
+        <img
+          src="https://2019.igem.org/wiki/images/3/3c/T--DUT_China_A--model-icon.png"
+          alt=""
+          class="icon"
+        />Validatity
+      </h3>
+      <br /><br />
+      The aim of our project is to use DNA hydrogel to encapsulate the living
+      CTCs, so we design a series of parts. <br /><br />
+      The linear ss DNA(BBa_K3060005 and BBa_K3060002) are used to prepare the
+      circular template. BBa_K3060001 is a ss DNA that we designed specially,
+      once BBa_K3060001 successfully targeting CTCs, the ssDNA aptamers will
+      expose the sticky end further for triggering the adhesion of sticky-end
+      pairing ssDNA. The pairing ssDNA can induce rolling circle amplification,
+      subsequent multi-primed chain amplification, with the help of primer
+      2(BBa_K3060005) and primer 3(BBa_K3060004), making the formation of CiC
+      around CTCs.
+    </div>
+    <div id="footer"></div>
+  </body>
+  <script src="./js/jquery-3.4.1.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/content-page.js"></script>
+  <script>
+    $(function() {
+      $("#navigation").load("./navigation.html");
+      $("#footer").load("./footer.html");
+    });
+  </script>
+  <!-- <script>
+      function openNav() {
+        document.getElementById("side-nav").style.width = "20vw";
+        document.getElementById("side-nav").style.paddingLeft = "3vw";
+        document.getElementById("open-nav").style.opacity = "0";
+        // set 0.3s timeout so that it won't look strange
+        setTimeout(
+        function() {document.getElementById("close-nav").style.opacity = "1";}, 300);
+        
+        // change the background-color of the main page
+        document.body.style.backgroundColor = "rgba(0,0,0,0.6)";
+      }
+    
+      function closeNav() {
+        document.getElementById("side-nav").style.width = "0";
+        document.getElementById("side-nav").style.paddingLeft = "0";
+        document.getElementById("open-nav").style.opacity = "1";
+        document.getElementById("close-nav").style.opacity = "0";
+    
+        //change back the background-color of the main page
+        document.body.style.backgroundColor = "white";
+        }
+      </script> -->
+</html>
